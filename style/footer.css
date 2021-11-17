@@ -1,0 +1,89 @@
+.contact-section {
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.contact__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+}
+
+.contact__item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding-left: 60px;
+}
+
+.contact__element {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.contact__img-location {
+    background-image: url('../img/location.svg'); 
+}
+
+.contact__img-phone {
+    background-image: url('../img/phone-call.svg');
+}
+
+.contact__img-convert {
+    background-image: url('../img/convert.svg');
+}
+
+.contact__indent-location {
+    margin-bottom: 36px;
+}
+
+.contact__indent-phone {
+    margin-bottom: 11px;
+    
+}
+
+.contact__indent-convert {
+    margin-bottom: 40px;
+}
+
+.contact__icon {
+    margin-bottom: 50px;
+}
+
+.contact__icon-item {
+    display: inline-block;
+    margin-right: 26px ;
+}
+
+.contact__icon-item:last-child {
+    margin-right: 0;
+}
+
+.contact__icon-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.contact__instagram {
+    background-image: url('../img/instagram.svg');
+}
+
+.contact__vk {
+    background-image: url('../img/vk.svg');
+}
+
+.contact__facebook {
+    background-image: url('../img/facebook.svg');
+}
+
+.contact__telegram {
+    background-image: url('../img/telegram.svg'); 
+}

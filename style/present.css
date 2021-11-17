@@ -1,0 +1,55 @@
+.present-indent {
+    padding-top: 107px; 
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.wrapper { 
+    height: 860px; 
+    /* margin-bottom: 20px; */
+    position: relative;
+    overflow: hidden;
+} 
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    background-image: url('../img/game-over-blue.png');
+    background-position: center top;
+    background-repeat: repeat-y;
+    width: 100%;
+    height: 660px;
+    z-index: -2;
+}
+
+.wrapper::after {
+    content: "";
+    background-image: url('../img/boy-game-over.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 675px;
+    height: 762px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.wrapper__title {
+    font-family: "Arial Black", sans-serif;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 1;
+    letter-spacing: -0.1em;
+    z-index: -2;
+}
+
+.wrapper__text {
+    margin-left: 211px;
+    font-size: 28px;
+    line-height: 50px;
+}

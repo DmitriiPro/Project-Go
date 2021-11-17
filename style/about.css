@@ -1,0 +1,97 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container-about {
+    height: 719px;
+    margin-bottom: 80px;
+}
+
+.about__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.about__left-photo {
+    padding-top: 30px;
+    width: 600px;
+    height: 596px;
+    position: relative;
+}
+
+.about__right-text {
+    height: 595px;
+    width: 500px;
+    position: relative;
+    right: -650px;
+    top: -595px;
+    
+}
+
+.about__block-element {
+    width: 500px;
+}
+
+.about__element {
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.about__blockquote {
+    margin-left: 31px;
+    width: 465px;
+}
+
+.about__blockquote-element {
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
+
+.about__blockquote-element::before {
+    content: " “ ";
+    left: 115px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    color: #6C0287;
+    margin-left: -35px;
+}
+
+.about__blockquote-element::after {
+    content: " ” ";
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #6C0287;
+}
+
+.about__cite {
+    margin-left: 111px;
+    background-image: url('../img/arkadii-abashin.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding-left: 100px;
+}
+
+.about__cite-element {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 389px;
+    height: 84px;
+}
