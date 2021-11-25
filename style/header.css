@@ -2,6 +2,10 @@
     padding: 30px 0 25px 0 ;
 }
 
+.container-header {
+    display: flex;
+}
+
 .header__nav {
     display: flex;
     flex-direction: row;
@@ -28,8 +32,6 @@
 }
 
 .header__btn {
-    width: 280px;
-    height: 55px;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
@@ -38,4 +40,5 @@
     background-color: #1B1A1B;
     border: 3px solid #6C0287;
     border-radius: 10px;
+    padding: 10px 30px;
 }

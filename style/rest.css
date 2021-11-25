@@ -1,0 +1,63 @@
+.container-rest {
+    height: 639px;
+}
+
+.rest__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rest__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    align-self: flex-end;
+    padding-left: 40px;
+    padding-bottom: 5px;
+}
+
+.text {
+    padding-bottom: 20px;
+}
+
+.rest__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 40px 20px;
+}
+
+.rest__item {
+    width: 380px;
+    height: 228px;
+    display: flex;
+}
+
+.rest__vr {
+    background-image: url('../img/rest__vr.jpg');
+    
+}
+
+.rest__audio {
+    background-image: url('../img/rest__audio.jpg');
+}
+
+.rest__karaoke {
+    background-image: url('../img/rest__girl.jpg');
+
+}
+.rest__game {
+    background-image: url('../img/rest__game.jpg');
+}
+.rest__monitor {
+    background-image: url('../img/rest__monitor.jpg');
+}
+
+.rest__ps {
+    background-image: url('../img/rest__ps5.jpg');
+}
