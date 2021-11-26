@@ -97,6 +97,139 @@
             </div>
         </section>
 
+        <section class="reservation">
+            <div class="container-reservation">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="reservation__form">
+                    <h2 class="reservation__title">Забронировать зал просто</h2>
+                        <fieldset class="reservation__hall">
+                            <h3 class="reservation__hall-title">Выбери зал</h3>
+                            <ul class="reservation__hall-list">
+                                <li class="reservation__hall-item">
+                                    <input type="radio" name="hall" value="vibes" class="reservation__radio" id="vibes">
+                                    <label for="vibes" class="reservation__label">80’s vibes</label>
+                                </li>
+
+                                <li class="reservation__hall-item">
+                                    <input type="radio" name="hall" value="star-wars" class="reservation__radio" id="star">
+                                    <label for="star" class="reservation__label">Star wars</label>
+                                </li>
+
+                                <li class="reservation__hall-item">
+                                    <input type="radio" name="hall" value="wild west" class="reservation__radio" id="west">
+                                    <label for="west" class="reservation__label">wild west</label>
+                                </li>
+
+                                <li class="reservation__hall-item">
+                                    <input type="radio" name="hall" value="neon style" class="reservation__radio" id="neon">
+                                    <label for="neon" class="reservation__label">neon style</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset class="reservation__holiday">
+                            <h3 class="reservation__holiday-title">Собери набор развлечений</h3>
+
+                            <div class="wrapper-holiday">
+                                <fieldset class="reservation__pristavka">
+                                    <legend class="reservation__pristavka-legend">Приставка:</legend>
+
+                                    <label for="ps" class="reservation__pristavka-label">
+                                    <input type="radio" class="reservation__input-radio" name="game" value="ps" id="ps">
+                                    PlayStation 5</label>
+    
+                                    <label for="sega" class="reservation__pristavka-label">  
+                                    <input type="radio" class="reservation__input-radio" name="game" value="Sega Mega Drive" id="sega">
+                                    Sega Mega Drive</label>
+    
+                                    <label for="x-z" class="reservation__pristavka-label">
+                                    <input type="radio" class="reservation__input-radio" name="game" value="X-box One S" id="x-z">
+                                    X-box One S</label>
+    
+                                    <label for="dendy" class="reservation__pristavka-label">
+                                    <input type="radio" class="reservation__input-radio" name="game" value="Dendy" id="dendy">
+                                    Dendy</label>
+    
+                                </fieldset>
+    
+                                <fieldset class="reservation__game">
+                                    <legend class="reservation__game-legend">Настольные игры</legend>
+    
+                                    <label for="jen" class="game-label">
+                                    <input type="checkbox" name="game" value="Jenga" id="jen" class="reservation__game-input">
+                                    Jenga</label>
+    
+                                    <label for="monopoly" class="game-label">
+                                    <input type="checkbox" name="game" value="Monopoly" id="monopoly" class="reservation__game-input">
+                                    Monopoly</label>
+    
+                                    <label for="man" class="game-label">
+                                    <input type="checkbox" name="game" value="Manchkin" id="man" class="reservation__game-input">
+                                    Манчкин</label>
+    
+                                    <label for="alias" class="game-label">
+                                    <input type="checkbox" name="game" value="alias" id="alias" class="reservation__game-input">
+                                    Alias</label>
+                                </fieldset>
+    
+                                <fieldset class="reservation__dop">
+                                    <legend class="reservation__dop-legend">Дополнительно</legend>
+    
+                                    <label for="music" class="dop-label">
+                                    <input type="checkbox" class="reservation__input-dop" name="game" value="Караоке" id="music">
+                                    Караоке</label>
+    
+                                    <label for="v-r" class="dop-label">
+                                    <input type="checkbox" name="game" value="VR" id="v-r" class="reservation__input-dop">
+                                    VR</label>
+                                </fieldset>
+                            </div>
+                            
+                            
+                        </fieldset>
+                
+                        <fieldset class="reservation__date">
+                            <h3 class="reservation__date-title">Выбери дату и время</h3>
+
+                            <div class="wrap-date">
+                            
+                                <div class="block one">
+                                <div class="block-date">
+                                    <!-- <label for="date" class="reservation__date-label">Дата</label> -->
+                                    <input id="date" type="date" name="date" required class="reservation__date-input data one-data">
+                                
+                                    <!-- <label for="time" class="reservation__date-label">Время</label> -->
+                                    <input id="time" type="time" name="time" required class="reservation__date-input data">
+
+                                </div>
+                                    <!-- <label for="how" class="reservation__date-label">Сколько человек</label> -->
+                                    <input id="how" type="number" name="number" required class="reservation__date-input men" placeholder="Сколько человек">
+                                </div>
+                                
+                                <div class="block">
+                                    <label for="name" class="reservation__date-label">Имя</label>
+                                    <input id="name" type="text" name="name" required class="reservation__date-input name">
+
+                                    <label for="surname" class="reservation__date-label">Фамилия</label>
+                                    <input id="surname" type="text" name="surname" required class="reservation__date-input name">
+                                </div>
+                                
+                                <div class="block">
+                                    <label for="phone" class="reservation__date-label">Телефон</label>
+                                    <input id="phone" type="tel" name="phone" required class="reservation__date-input tel">
+
+                                    <label for="mail" class="reservation__date-label">E-mail</label>
+                                    <input id="mail" type="email" name="email" required class="reservation__date-input tel">
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button class="reservation__btn" type="submit">Забронировать</button>
+                            </div>
+                        
+                        </fieldset>
+                </form>
+            </div>
+        </section>
+
         <section class="about">
             <div class="container container-about">
                 <h2 class="about__subtitle">о нас</h2>
@@ -176,11 +309,12 @@
         </section>
 
     </main>
-    <footer class="footer" id="footer">
-        <section class="contact contact-section">
-            <div class="container contact__container">
-                    <h2 class="contact__subtitle">контакты</h2>
+    <footer class="contact" id="footer">
+        <div class="contact-container">
+            <h2 class="contact__title">контакты</h2>
 
+            <div class="wrap-cart">
+                <div class="footer-left cart">
                     <ul class="contact__list">
                         <li class="contact__item contact__img-location">
                             <p class="contact__element contact__indent-location"><a class="contact__link" href="https://maps.google.com" target="_blank">г. Москва
@@ -196,35 +330,45 @@
                         </li>
                     </ul>
     
-                        <ul class="contact__icon">
-                            <li class="contact__icon-item">
-                                <a class="contact__instagram contact__icon-link" href="https://www.instagram.com/" target="_blank" >
-                                    
-                                </a>
-                            </li>
+                    <ul class="contact__icon">
+                        <li class="contact__icon-item">
+                            <a class="contact__instagram contact__icon-link" href="https://www.instagram.com/" target="_blank" >
+                                
+                            </a>
+                        </li>
 
-                            <li class="contact__icon-item">
-                                <a class="contact__vk contact__icon-link" href="https://vk.com/" target="_blank"  >
-                                    
-                                </a>
-                            </li>
+                        <li class="contact__icon-item">
+                            <a class="contact__vk contact__icon-link" href="https://vk.com/" target="_blank"  >
+                                
+                            </a>
+                        </li>
 
-                            <li class="contact__icon-item">
-                                <a class="contact__facebook contact__icon-link" href="https://ru-ru.facebook.com/" target="_blank" >
-                                    
-                                </a>
-                            </li>
+                        <li class="contact__icon-item">
+                            <a class="contact__facebook contact__icon-link" href="https://ru-ru.facebook.com/" target="_blank" >
+                                
+                            </a>
+                        </li>
 
-                            <li class="contact__icon-item">
-                                <a class="contact__telegram contact__icon-link" href="https://telegram.org/" target="_blank">
-                                    
-                                </a>
-                            </li>
-                        </ul>
-
+                        <li class="contact__icon-item">
+                            <a class="contact__telegram contact__icon-link" href="https://telegram.org/" target="_blank">
+                                
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-        </section>
-
+                <div class="footer-right cart">
+                    <img src="img/footer-map.png" alt="" class="footer-right__map" width="680" height="274">
+                </div>
+            </div>
+            <div class="cite">
+                <cite class="footer-cite">© Game Over, 2021</cite>
+                <blockquote class="footer-blockquote">
+                    <p class="footer-text">Design by Anastasia Ilina</p>
+                    <p class="footer-text">ilina9825@gmail.com</p>
+                </blockquote>
+            </div>
+            
+        </div>
     </footer>
 </body>
 </html>

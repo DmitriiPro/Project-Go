@@ -1,8 +1,15 @@
-.contact-section {
+.contact {
+    padding-top: 25px;
     background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
-.contact__subtitle {
+.contact-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 55px 30px 20px;
+}
+
+.contact__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
@@ -51,10 +58,6 @@
     margin-bottom: 40px;
 }
 
-.contact__icon {
-    margin-bottom: 50px;
-}
-
 .contact__icon-item {
     display: inline-block;
     margin-right: 26px ;
@@ -86,4 +89,39 @@
 
 .contact__telegram {
     background-image: url('../img/telegram.svg'); 
+}
+
+.wrap-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 146px;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-text:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer-cite {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-self: flex-start;
+}
+
+.footer-blockquote {
+    text-align: end;
+}
+
+.cite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

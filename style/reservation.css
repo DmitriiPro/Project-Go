@@ -1,0 +1,250 @@
+.container-reservation {
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto;
+    background: #440F51;
+}
+
+.reservation__form {
+    padding: 80px 0;
+}
+
+.reservation__hall {
+    margin-bottom: 60px;
+}
+
+.reservation__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.reservation__hall-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reservation__hall-list {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.reservation__radio {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.reservation__label {
+    display: inline-block;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    width: 250px;
+    height: 55px;
+}
+
+/* блок приставка */
+
+.reservation__holiday {
+    margin-bottom: 67px;
+    width: 1080px;
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.wrapper-holiday {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reservation__holiday-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reservation__pristavka {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation__pristavka-legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+    
+}
+
+.reservation__input-radio {
+    width: 27px;
+    height: 27px;
+}
+
+.reservation__pristavka-label {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+/* блок настольные игры */
+
+.reservation__game {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation__game-legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.reservation__game-input {
+    width: 25px;
+    height: 25px;
+}
+
+.game-label {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+/* блок дополнительно */
+
+.reservation__dop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation__dop-legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.reservation__input-dop {
+    width: 25px;
+    height: 25px;
+}
+
+.dop-label {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+/* блок время и дата */
+
+.reservation__date {
+    width: 980px;
+    display: inline-block;
+    padding-left: 100px
+    
+}
+
+.reservation__date-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+
+.wrap-date {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    gap: 16px;
+    align-self: flex-end;
+}
+
+.data {
+    display: inline;
+    flex-direction: row;
+}
+
+.block-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tel, .men {
+    width: 300px;
+    height: 52px;
+}
+
+.name {
+    width: 280px;
+    height: 52px;
+
+}
+
+.men {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+}
+
+.data {
+    width: 134px;
+    height: 52px;
+}
+
+.reservation__date-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.reservation__btn {
+    border-radius: 10px;
+    padding: 16px 50px; 
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+    background: #FFFFFF;
+}
+
+.button {
+    display:flex;
+    justify-content: flex-end;
+}
