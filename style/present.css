@@ -57,15 +57,18 @@
 
 .wrap {
     display: flex;
-    gap: 31px;
-    align-items:flex-end; 
+    flex-direction: column;
+    flex-basis: 180px;
     margin-bottom: 170px;
 }
 
-.wrap__text-color {
+.wrap-power {
     display: flex;
-    flex-direction: column;
-    flex-basis: 180px;
+    gap: 31px;
+    align-items:flex-end;
+}
+
+.wrap__text-color {
     text-align: center;
     font-size: 28px;
     line-height: 32px;
@@ -73,7 +76,7 @@
     z-index: 4;
 }
 
-.wrap__four::before {
+.wrap__four {
     content: "4";
     font-weight: 900;
     font-size: 100px;
@@ -82,7 +85,7 @@
     align-self: center;
 }
 
-.wrap__new::before {
+.wrap__new {
     content: "NEW";
     font-weight: 700;
     font-size: 80px;
