@@ -77,7 +77,6 @@
 }
 
 .wrap__four {
-    content: "4";
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
@@ -86,12 +85,10 @@
 }
 
 .wrap__new {
-    content: "NEW";
     font-weight: 700;
     font-size: 80px;
     line-height: 92px;
     color: #CD06FF;
-    align-items: flex-end;
 }
 
 .wrapper__button {
