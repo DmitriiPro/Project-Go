@@ -31,7 +31,6 @@
     background-image: url("../img/plus-violet.svg");
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
-
 }
 
 .questions__item:nth-child(even) {
@@ -49,4 +48,14 @@
     margin-bottom: 20px;
 }
 
+.questions__item:hover:nth-child(odd) {
+    background-image: url("../img/plus-white-hover.svg");
+    background-repeat: no-repeat;
+    background-position: right 70px top 50%;
+}
 
+.questions__item:hover:nth-child(even) {
+    background-image: url("../img/plus-violet-hover.svg");
+    background-repeat: no-repeat;
+    background-position: right 70px top 50%;
+}
