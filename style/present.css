@@ -109,3 +109,40 @@
     right: 545px;
     z-index: 3;
 }
+
+/* кнопка состояния */
+
+.wrapper__hover:hover {
+    background-image: url('../img/wrapper-hover.svg');
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 97px;
+    position: absolute;
+    top: 680px;
+    right: 545px;
+    z-index: 3;
+}
+
+.wrapper__hover:focus {
+    background-image: url('../img/wrapper-focus-pink.svg');
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 97px;
+    position: absolute;
+    top: 680px;
+    right: 545px;
+    z-index: 3;
+    outline: 1px solid #CD06FF;
+}
+
+
+.wrapper__hover:active {
+    background-image: url('../img/wrapper-click.svg');
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 97px;
+    position: absolute;
+    top: 680px;
+    right: 545px;
+    z-index: 3;
+}

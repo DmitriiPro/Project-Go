@@ -68,27 +68,9 @@
 }
 
 .contact__icon-link {
-    background-repeat: no-repeat;
-    background-position: center;
     display: block;
     width: 50px;
     height: 50px;
-}
-
-.contact__instagram {
-    background-image: url('../img/instagram.svg');
-}
-
-.contact__vk {
-    background-image: url('../img/vk.svg');
-}
-
-.contact__facebook {
-    background-image: url('../img/facebook.svg');
-}
-
-.contact__telegram {
-    background-image: url('../img/telegram.svg'); 
 }
 
 .wrap-cart {
@@ -124,4 +106,104 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* кнопка svg инстаграм  */
+
+.svg-inst-link {
+    color: #FFFFFF;
+    outline: 0;
+}
+
+.svg-inst-link:hover {
+    color:  #EADEED;
+}
+
+.svg-inst-link:focus {
+    outline: 1px solid #CD06FF;
+    color:  #EADEED;
+}
+
+.svg-inst-link:active {
+    color:  #CD06FF;
+    outline: 0;
+}
+
+.contact__svg-inst {
+    fill: currentColor;
+}
+
+/* кнопка вк */
+
+.svg-vk-link {
+    color: #FFFFFF;
+    outline: 0;
+}
+
+.svg-vk-link:hover {
+    color:  #EADEED;
+}
+
+.svg-vk-link:focus {
+    outline: 1px solid #CD06FF;
+    color:  #EADEED;
+}
+
+.svg-vk-link:active {
+    color:  #CD06FF;
+    outline: 0;
+}
+
+.contact__svg-vk {
+    fill: currentColor;
+}
+
+/* кнопка фейсбук */
+.svg-fb-link {
+    color: #FFFFFF;
+    outline: 0;
+}
+
+.svg-fb-link:hover {
+    color:  #EADEED;
+}
+
+.svg-fb-link:focus {
+    outline: 1px solid #CD06FF;
+    color:  #EADEED;
+}
+
+.svg-fb-link:active {
+    color:  #CD06FF;
+    outline: 0;
+}
+
+
+.contact__svg-fb {
+    fill: currentColor;
+}
+
+/* кнопка телеграм  */
+
+.svg-tg-link {
+    color: #FFFFFF;
+    outline: 0;
+}
+
+.svg-tg-link:hover {
+    color:  #EADEED;
+}
+
+.svg-tg-link:focus {
+    outline: 1px solid #CD06FF;
+    color:  #EADEED;
+}
+
+.svg-tg-link:active {
+    color:  #CD06FF;
+    outline: 0;
+}
+
+.contact__svg-tg {
+    fill: currentColor;
 }

@@ -248,3 +248,53 @@
     display:flex;
     justify-content: flex-end;
 }
+
+/* кнопки состояния */
+
+.reservation__label:hover {
+    background: #EADEED;
+    color: #000000;
+    border: 3px solid #640AA3;
+}
+
+.reservation__label:focus {
+    background: #FFFFFF;
+    border: 3px solid #640AA3;
+    color: #000000;
+}
+
+.reservation__label:active {
+    background: #EADEED;
+    border-radius: 8px;
+    color: #000000;
+    outline: 0;
+}
+
+button:hover {
+    background: #840AA3;
+    color: #FFFFFF;
+}
+
+.reservation__btn:focus {
+    background: #840AA3;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.reservation__btn:active {
+    background: #640AA3;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+input:focus {
+    background: #FFFFFF;
+    border: 2px solid #CD06FF;
+    
+}
+
+label:focus {
+    background: #FFFFFF;
+    border: 2px solid #CD06FF;
+    
+}
