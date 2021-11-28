@@ -259,7 +259,7 @@
 
 .reservation__label:focus {
     background: #FFFFFF;
-    border: 3px solid #640AA3;
+    outline: 3px solid #640AA3;
     color: #000000;
 }
 
@@ -297,4 +297,12 @@ label:focus {
     background: #FFFFFF;
     border: 2px solid #CD06FF;
     
+}
+
+input[type="radio"]:focus {
+    outline: 1px solid #CD06FF;
+}
+
+input[type="checkbox"]:focus {
+    outline: 1px solid #CD06FF;
 }
