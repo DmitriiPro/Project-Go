@@ -257,6 +257,10 @@
     border: 3px solid #640AA3;
 }
 
+.reservation__radio:focus {
+    outline: 0;
+}
+
 .reservation__label:focus {
     background: #FFFFFF;
     outline: 3px solid #640AA3;
@@ -291,13 +295,6 @@ button:hover {
     background: #FFFFFF;
     outline: 2px solid #CD06FF;
     border: transparent;
-    
-}
-
-label:focus {
-    background: #FFFFFF;
-    border: 2px solid #CD06FF;
-    
 }
 
 .reservation__input-radio:focus {
