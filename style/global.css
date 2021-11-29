@@ -86,15 +86,5 @@ button:hover {
     color: #FFFFFF;
 }
 
-input:focus {
-    background: #FFFFFF;
-    border: 2px solid #CD06FF;
-    
-}
 
-label:focus {
-    background: #FFFFFF;
-    border: 2px solid #CD06FF;
-    
-}
 

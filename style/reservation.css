@@ -287,9 +287,10 @@ button:hover {
     color: #FFFFFF;
 }
 
-input:focus {
+.reservation__date-input:focus { 
     background: #FFFFFF;
-    border: 2px solid #CD06FF;
+    outline: 2px solid #CD06FF;
+    border: transparent;
     
 }
 
@@ -299,7 +300,7 @@ label:focus {
     
 }
 
-input[type="radio"]:focus {
+.reservation__input-radio:focus {
     outline: 1px solid #CD06FF;
 }
 
