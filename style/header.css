@@ -42,6 +42,10 @@
 
 /* кнопки состояния */
 
+button, .header__btn {
+    transition: background 2s ease-in, color 2s ease-in;
+}
+
 button:hover {
     background: #840AA3;
     color: #FFFFFF;

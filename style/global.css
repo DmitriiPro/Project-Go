@@ -81,6 +81,10 @@ section {
     padding: 0 30px;
 }
 
+button {
+    transition: background 2s ease-in, color 2s ease-in;
+}
+
 button:hover {
     background: #840AA3;
     color: #FFFFFF;

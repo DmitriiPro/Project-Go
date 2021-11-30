@@ -38,9 +38,21 @@
     display: flex;
 }
 
+.rest__item {
+    transition-delay:  0.2s;
+    transition: all;
+    /* perspective: 10%; */
+}
+
+.rest__item:hover  {
+    width: 10%;
+    
+    
+}
+
+
 .rest__vr {
     background-image: url('../img/rest__vr.jpg');
-    
 }
 
 .rest__audio {
@@ -49,8 +61,8 @@
 
 .rest__karaoke {
     background-image: url('../img/rest__girl.jpg');
-
 }
+
 .rest__game {
     background-image: url('../img/rest__game.jpg');
 }

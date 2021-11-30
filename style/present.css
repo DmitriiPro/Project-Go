@@ -112,6 +112,11 @@
 
 /* кнопка состояния */
 
+.wrapper__link {
+    transition: background 3s ease-in;
+}
+
+
 .wrapper__hover:hover {
     background-image: url('../img/wrapper-hover.svg');
     background-repeat: no-repeat;
