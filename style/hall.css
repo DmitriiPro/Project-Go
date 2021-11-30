@@ -36,6 +36,14 @@
     margin: auto;
 } 
 
+.hall__item {
+    transition:  2s ease;
+}
+
+.hall__item:hover {
+    transform: scale(1.1);
+}
+
 .hall__vibes-img {
     background-image: url('../img/vibes-80.jpg');
 }

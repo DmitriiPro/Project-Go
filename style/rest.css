@@ -39,17 +39,13 @@
 }
 
 .rest__item {
-    transition-delay:  0.2s;
-    transition: all;
-    /* perspective: 10%; */
+    transition:  2s ease;
 }
 
 .rest__item:hover  {
-    width: 10%;
-    
+    transform: scale(1.1);
     
 }
-
 
 .rest__vr {
     background-image: url('../img/rest__vr.jpg');

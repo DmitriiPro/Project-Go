@@ -48,6 +48,10 @@
     margin-bottom: 20px;
 }
 
+.questions__item {
+    transition: background 2s linear;
+}
+
 .questions__item:hover:nth-child(odd) {
     background-image: url("../img/plus-violet-hover.svg");
     background-repeat: no-repeat;

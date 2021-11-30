@@ -113,6 +113,7 @@
 .svg-inst-link {
     color: #FFFFFF;
     outline: 0;
+    transition: 2s ease-in;
 }
 
 .svg-inst-link:hover {
@@ -138,6 +139,7 @@
 .svg-vk-link {
     color: #FFFFFF;
     outline: 0;
+    transition: 2s ease-in;
 }
 
 .svg-vk-link:hover {
@@ -162,6 +164,7 @@
 .svg-fb-link {
     color: #FFFFFF;
     outline: 0;
+    transition: 2s ease-in;
 }
 
 .svg-fb-link:hover {
@@ -188,6 +191,7 @@
 .svg-tg-link {
     color: #FFFFFF;
     outline: 0;
+    transition: 2s ease-in;
 }
 
 .svg-tg-link:hover {

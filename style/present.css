@@ -112,8 +112,8 @@
 
 /* кнопка состояния */
 
-.wrapper__link {
-    transition: background 3s ease-in;
+.wrapper__hover {
+    transition: 2s linear;
 }
 
 

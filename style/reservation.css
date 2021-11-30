@@ -251,6 +251,10 @@
 
 /* кнопки состояния */
 
+.reservation__label {
+    transition: 2s linear;
+}
+
 .reservation__label:hover {
     background: #EADEED;
     color: #000000;
@@ -263,7 +267,7 @@
 
 .reservation__label:focus {
     background: #FFFFFF;
-    outline: 3px solid #640AA3;
+    border: 3px solid #640AA3;
     color: #000000;
 }
 
@@ -291,14 +295,26 @@ button:hover {
     color: #FFFFFF;
 }
 
+.reservation__date-input {
+    transition: 2s linear;
+}
+
 .reservation__date-input:focus { 
     background: #FFFFFF;
     outline: 2px solid #CD06FF;
     border: transparent;
 }
 
+.reservation__input-radio {
+    transition: outline 2s linear;
+}
+
 .reservation__input-radio:focus {
     outline: 1px solid #CD06FF;
+}
+
+input[type="checkbox"] {
+    transition: outline 2s linear;
 }
 
 input[type="checkbox"]:focus {
