@@ -252,7 +252,7 @@
 /* кнопки состояния */
 
 .reservation__label {
-    transition: 2s linear;
+    transition: 0.200s linear;
 }
 
 .reservation__label:hover {
@@ -296,7 +296,7 @@ button:hover {
 }
 
 .reservation__date-input {
-    transition: 2s linear;
+    transition: 0.200s linear;
 }
 
 .reservation__date-input:focus { 
@@ -306,7 +306,7 @@ button:hover {
 }
 
 .reservation__input-radio {
-    transition: outline 2s linear;
+    transition: outline 0.200s linear;
 }
 
 .reservation__input-radio:focus {
@@ -314,7 +314,7 @@ button:hover {
 }
 
 input[type="checkbox"] {
-    transition: outline 2s linear;
+    transition: outline 0.200s linear;
 }
 
 input[type="checkbox"]:focus {

@@ -43,7 +43,7 @@
 /* кнопки состояния */
 
 button, .header__btn {
-    transition: background 2s ease-in, color 2s ease-in;
+    transition: background 0.200s ease-in, color 0.200s ease-in;
 }
 
 button:hover {
