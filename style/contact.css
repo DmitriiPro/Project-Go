@@ -15,7 +15,7 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin-bottom: 54px;
 }
 
@@ -30,7 +30,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
 }
 
 .contact__img-location {
@@ -111,7 +111,7 @@
 /* кнопка svg инстаграм  */
 
 .svg-inst-link {
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     outline: 0;
     transition: 0.200s ease-in;
 }
@@ -137,7 +137,7 @@
 /* кнопка вк */
 
 .svg-vk-link {
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     outline: 0;
     transition: 0.200s ease-in;
 }
@@ -162,7 +162,7 @@
 
 /* кнопка фейсбук */
 .svg-fb-link {
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     outline: 0;
     transition: 0.200s ease-in;
 }
@@ -189,7 +189,7 @@
 /* кнопка телеграм  */
 
 .svg-tg-link {
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     outline: 0;
     transition: 0.200s ease-in;
 }

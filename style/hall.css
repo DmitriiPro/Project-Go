@@ -8,7 +8,7 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin-bottom: 40px;
 }
 
@@ -32,7 +32,7 @@
     font-size: 70px;
     line-height: 80px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin: auto;
 } 
 

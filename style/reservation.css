@@ -51,7 +51,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
-    background-color: #FFFFFF;
+    background-color: var(--main-color,#FFFFFF);
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -241,7 +241,7 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #6C0287;
-    background: #FFFFFF;
+    background: var(--main-color,#FFFFFF);
 }
 
 .button {
@@ -262,11 +262,11 @@
 }
 
 .reservation__radio:focus {
-    outline: 0;
+    border: 0;
 }
 
 .reservation__label:focus {
-    background: #FFFFFF;
+    background: var(--main-color,#FFFFFF);
     border: 3px solid #640AA3;
     color: #000000;
 }
@@ -275,24 +275,24 @@
     background: #EADEED;
     border-radius: 8px;
     color: #000000;
-    outline: 0;
+    border: 0;
 }
 
 button:hover {
     background: #840AA3;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
 }
 
 .reservation__btn:focus {
     background: #840AA3;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
 }
 
 .reservation__btn:active {
     background: #640AA3;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
 }
 
 .reservation__date-input {
@@ -300,7 +300,7 @@ button:hover {
 }
 
 .reservation__date-input:focus { 
-    background: #FFFFFF;
+    background: var(--main-color,#FFFFFF);
     outline: 2px solid #CD06FF;
     border: transparent;
 }
@@ -320,3 +320,10 @@ input[type="checkbox"] {
 input[type="checkbox"]:focus {
     outline: 1px solid #CD06FF;
 }
+
+.reservation__label,.reservation__radio, .reservation__input-radio , input, .reservation__input-radio, 
+.reservation__pristavka-label, .reservation__game-input, .game-label, .reservation__input-dop, .dop-label, 
+.reservation__date-input {
+    border: 0;
+} 
+

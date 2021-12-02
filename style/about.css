@@ -14,7 +14,7 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin-bottom: 40px;
 }
 
@@ -41,7 +41,7 @@
 .about__element {
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin-bottom: 48px;
 }
 
@@ -54,7 +54,7 @@
     font-size: 44px;
     line-height: 50px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     margin-bottom: 39px;
 }
 
@@ -90,7 +90,7 @@
     font-style: normal;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     width: 389px;
     height: 84px;
 }

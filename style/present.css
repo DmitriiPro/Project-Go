@@ -96,7 +96,7 @@
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color,#FFFFFF);
     background: #6C0287;
     border-radius: 10px;
     padding: 25px 69px;
@@ -119,6 +119,7 @@
 .wrapper__hover:hover {
     background: url('../img/wrapper-hover.svg');
     background-repeat: no-repeat;
+    transform: scale(1.1);
 }
 
 .wrapper__hover:focus {
@@ -130,4 +131,5 @@
 .wrapper__hover:active {
     background: url('../img/wrapper-click.svg');
     background-repeat: no-repeat; 
+    transform: scale(1);
 }
