@@ -47,7 +47,7 @@ button, .header__btn {
 }
 
 button:hover {
-    background: #840AA3;
+    background: var( --violet, #840AA3);
     color: var(--main-color,#FFFFFF);
 }
 
@@ -58,19 +58,19 @@ button:hover {
 }
 
 .header__btn:active {
-    background: #640AA3;
+    background: var(--violet-dark, #640AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
 }
 
 .wrapper__button:focus {
-    background: #840AA3;
+    background: var( --violet, #840AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
 }
 
 .wrapper__button:active {
-    background: #640AA3;
+    background: var(--violet-dark, #640AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
 }
@@ -82,10 +82,10 @@ button:hover {
 }
 
 .header__link:hover {
-    color: #CD06FF;
+    color: var(--pink,#CD06FF);
 }
 
 .header__link:active {
-    color: #640AA3;
+    color: var(--violet-dark, #640AA3);
 }
 

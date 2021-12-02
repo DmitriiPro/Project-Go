@@ -2,7 +2,7 @@
     max-width: 1240px;
     padding: 0 30px;
     margin: 0 auto;
-    background: #440F51;
+    background: var(--main-violet, #440F51);
 }
 
 .reservation__form {
@@ -54,7 +54,7 @@
     background-color: var(--main-color,#FFFFFF);
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black, #000000);
     width: 250px;
     height: 55px;
 }
@@ -258,7 +258,7 @@
 .reservation__label:hover {
     background: #EADEED;
     color: #000000;
-    border: 3px solid #640AA3;
+    border: 3px solid var(--violet-dark, #640AA3);
 }
 
 .reservation__radio:focus {
@@ -267,30 +267,30 @@
 
 .reservation__label:focus {
     background: var(--main-color,#FFFFFF);
-    border: 3px solid #640AA3;
-    color: #000000;
+    border: 3px solid var(--violet-dark, #640AA3);
+    color: var(--black, #000000);
 }
 
 .reservation__label:active {
     background: #EADEED;
     border-radius: 8px;
-    color: #000000;
+    color: var(--black, #000000);
     border: 0;
 }
 
 button:hover {
-    background: #840AA3;
+    background: var(--violet, #840AA3);
     color: var(--main-color,#FFFFFF);
 }
 
 .reservation__btn:focus {
-    background: #840AA3;
+    background: var(--violet, #840AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
 }
 
 .reservation__btn:active {
-    background: #640AA3;
+    background: var(--violet-dark, #640AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
 }
@@ -301,7 +301,7 @@ button:hover {
 
 .reservation__date-input:focus { 
     background: var(--main-color,#FFFFFF);
-    outline: 2px solid #CD06FF;
+    outline: 2px solid var(--pink, #CD06FF);
     border: transparent;
 }
 
@@ -310,7 +310,7 @@ button:hover {
 }
 
 .reservation__input-radio:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--pink, #CD06FF);
 }
 
 input[type="checkbox"] {
@@ -318,7 +318,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--pink, #CD06FF);
 }
 
 .reservation__label,.reservation__radio, .reservation__input-radio , input, .reservation__input-radio, 

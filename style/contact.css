@@ -121,12 +121,12 @@
 }
 
 .svg-inst-link:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var( --pink, #CD06FF);
     color:  #EADEED;
 }
 
 .svg-inst-link:active {
-    color:  #CD06FF;
+    color:  var( --pink, #CD06FF);
     outline: 0;
 }
 
@@ -147,12 +147,12 @@
 }
 
 .svg-vk-link:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var( --pink, #CD06FF);
     color:  #EADEED;
 }
 
 .svg-vk-link:active {
-    color:  #CD06FF;
+    color:  var( --pink, #CD06FF);
     outline: 0;
 }
 
@@ -172,12 +172,12 @@
 }
 
 .svg-fb-link:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var( --pink, #CD06FF);
     color:  #EADEED;
 }
 
 .svg-fb-link:active {
-    color:  #CD06FF;
+    color:  var( --pink, #CD06FF);
     outline: 0;
 }
 
@@ -199,12 +199,12 @@
 }
 
 .svg-tg-link:focus {
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var( --pink, #CD06FF);
     color:  #EADEED;
 }
 
 .svg-tg-link:active {
-    color:  #CD06FF;
+    color:  var( --pink, #CD06FF);
     outline: 0;
 }
 

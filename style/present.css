@@ -80,7 +80,7 @@
     font-weight: 900;
     font-size: 100px;
     line-height: 141px;
-    color: #CD06FF;
+    color: var(--pink,#CD06FF);
     align-self: center;
 }
 
@@ -88,7 +88,7 @@
     font-weight: 700;
     font-size: 80px;
     line-height: 92px;
-    color: #CD06FF;
+    color: var(--pink,#CD06FF);
 }
 
 .wrapper__button {
@@ -125,7 +125,7 @@
 .wrapper__hover:focus {
     background: url('../img/wrapper-focus-pink.svg');
     background-repeat: no-repeat; 
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--pink,#CD06FF);
 }
 
 .wrapper__hover:active {

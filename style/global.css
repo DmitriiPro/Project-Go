@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background: #840AA3;
+    background: var(--violet, #840AA3);
     color: var(--main-color,#FFFFFF);
 }
 
