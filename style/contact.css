@@ -211,3 +211,29 @@
 .contact__svg-tg {
     fill: currentColor;
 }
+
+/* ссылки состояния */
+
+.contact__link {
+    transition: color 0.200s ease-in;
+}
+
+.contact__link:hover {
+    color: var(--pink,#CD06FF);
+}
+
+.contact__link:active {
+    color: var(--violet-dark, #640AA3);
+}
+
+.footer-link {
+    transition: color 0.200s ease-in;
+}
+
+.footer-link:hover {
+    color: var(--pink,#CD06FF);
+}
+
+.footer-link:active {
+    color: var(--violet-dark, #640AA3);
+}
