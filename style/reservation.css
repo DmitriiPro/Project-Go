@@ -82,10 +82,17 @@
     margin-bottom: 40px;
 }
 
-.reservation__pristavka {
+/* .reservation__pristavka {
     display: flex;
     flex-direction: column;
     gap: 20px;
+} */
+
+.reservation__holiday-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
 
 .reservation__pristavka-legend {
@@ -324,6 +331,6 @@ input[type="checkbox"]:focus {
 .reservation__label,.reservation__radio, .reservation__input-radio , input, .reservation__input-radio, 
 .reservation__pristavka-label, .reservation__game-input, .game-label, .reservation__input-dop, .dop-label, 
 .reservation__date-input {
-    border: 0;
+    outline: 0;
 } 
 

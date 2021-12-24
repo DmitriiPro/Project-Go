@@ -123,9 +123,10 @@
 }
 
 .wrapper__hover:focus {
-    background: url('../img/wrapper-focus-pink.svg');
-    background-repeat: no-repeat; 
+    /* background: url('../img/wrapper-focus-pink.svg');
+    background-repeat: no-repeat;  */
     outline: 1px solid var(--pink,#CD06FF);
+    
 }
 
 .wrapper__hover:active {
