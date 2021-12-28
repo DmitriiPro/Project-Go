@@ -78,13 +78,13 @@
 /* задал через псевдо цвета на ааккардеон 
 цвета задал на сам li*/
 /* ///////////////////////////////////////////////// */
-.questions__title:nth-child(odd) {
+.questions__item:nth-child(odd) .questions__title {
     background-image: url("../img/plus-violet.svg");
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
 }
 
-.questions__title:nth-child(even) {
+.questions__item:nth-child(even) .questions__title {
     background-image: url("../img/plus-white.svg");
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
@@ -115,7 +115,7 @@
     background-position: right 70px top 50%;
 }
 
-.questions__title:active:nth-child(odd) {
+/* .questions__title:active:nth-child(odd) {
     background-image: url("../img/active-minus-violet.svg");
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
@@ -125,4 +125,5 @@
     background-image: url("../img/active-minus-white.svg");
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
-} 
+}  */
+

@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=12aebab4-08b6-49aa-9a3f-d9ba8638abdc&lang=ru_RU" type="text/javascript"></script>
     <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/just-validate.min.js" defer></script>
+    <script src="js/inputmask.min.js" defer></script>
     <script src="js/jquery-ui.min.js" defer></script>
     <script src="js/inert.js" defer></script>
-    <script src="js/script.js" type="module"></script>
+    <script src="js/index.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -319,36 +324,36 @@
             <div class=" container-questions">
                 <h2 class="questions__subtitle">Частые вопросы</h2>
                 <ul class="questions__list">
-                    <li class="questions__item">
-                        <h3 class="questions__title">
+                    <li class="questions__item" role="tablist">
+                        <h3 class="questions__title odd" role="tab">
                             <span class="questions__title-spn">Можно ли забронировать комнату онлайн?</span>
                         </h3>
                         <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                     </li>
 
-                    <li class="questions__item">
-                        <h3 class="questions__title"> 
+                    <li class="questions__item" role="tablist">
+                        <h3 class="questions__title even" role="tab"> 
                             <span class="questions__title-spn">Могут ли мне вернуть деньги за бронь?</span>
                         </h3>
                         <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                     </li>
 
-                    <li class="questions__item">
-                        <h3 class="questions__title">
+                    <li class="questions__item" role="tablist">
+                        <h3 class="questions__title odd" role="tab">
                             <span class="questions__title-spn">Какая комната самая популярная?</span>
                         </h3>
                         <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                     </li>
 
-                    <li class="questions__item">
-                        <h3 class="questions__title">
+                    <li class="questions__item" role="tablist">
+                        <h3 class="questions__title even" role="tab">
                             <span class="questions__title-spn">Как получить VIP карту?</span>
                         </h3>
                         <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                     </li>
 
-                    <li class="questions__item">
-                        <h3 class="questions__title">
+                    <li class="questions__item" role="tablist">
+                        <h3 class="questions__title odd" role="tab">
                             <span class="questions__title-spn">Какая комната самая популярная?</span>
                         </h3>
                         <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
@@ -429,5 +434,70 @@
             
         </div>
     </footer>
+    <div class="cart">
+        <div class="cart-container">
+            <div class="cart-wrapper">
+                <p class="cart__element">Secure Checkout</p>
+
+                <div class="cart-cart-pink">
+
+                <div class="cart__wrap-img">
+                    <img src="img/cart-visa.png" alt="надпись виза" class="cart__visa" width="67" height="28">
+                    <img src="img/cart-mc.png" alt="логотип красный с желтым ромбом" class="cart__mc"  width="67" height="28">
+                </div>
+                
+                <p class="cart__text-num">xxxx xxxx xxxx 4444</p>
+
+                <div class="cart__name-num">
+                    <p class="cart__elem-num">Leskin Maksim</p>
+                    <p class="cart__elem-number">04/24</p>
+                </div>
+
+                </div>
+
+                <div class="cart__btn">
+                    <button class="cart__btn-new-cart crt-bt">
+                        <img src="img/new-card.svg" alt="значек карты" class="cart__img-new" width="29" height="30">
+                        <span class="cart__img-te">Add new card</span>
+                    </button>
+
+                    <button class="cart__scan crt-bt">
+                        <img src="img/scan-add.svg" alt="Значек для сканирования" class="cart__img-scan" width="29" height="30">
+                        <span class="cart__elem-scan">Scan & Add</span>
+                    </button>
+                </div>
+
+                <form action="#" class="cart__form">
+                    <label class="cart__lb">Card Holder
+                        <input type="text" name="name" class="cart__input-name" placeholder="Leskin Maksim" data-validate-field="name">
+                        <span></span>
+                    </label>
+
+                    <label class="cart__lb">Card Number
+                        <input type="text" name="number" class="cart__input-number" placeholder="xxxx xxxx xxxx 4444" data-validate-field="number">
+                        <span></span>
+                    </label>
+
+                    <div class="cart__inp-num">
+                        <div class="cr-in">
+                            <label class="cart__lb cart__label">Card Expiry
+                                <input type="text" name="number" class="cart__inp-num-one cr-i" placeholder="04 / 24" data-validate-field="date">
+                            </label>
+                        </div>
+
+                        <div class="cr-in">
+                            <label class="cart__lb cart__label">CVV
+                                <input type="text" name="number" class="cart__inp-num-two cr-i" placeholder="xxx" data-validate-field="cvv"> 
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="cart__form-btn">
+                        <button class="cart__btn-check" type="submit">CHECK OUT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

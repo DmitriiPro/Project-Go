@@ -65,58 +65,37 @@ const safari = () => {
         })
 };
 
-// const questions = () => {
+const questions = () => {
 
-    // const open = (button, dropDown) => {
-    //     closeAllDrops(button, dropDown);
-    //     button.ariaExpanded = true;
     
-    //     dropDown.style.height = dropDown.scrollHeight + 'px';
-    //     button.classList.add('active');
-    //     dropDown.classList.add('active');
-    // };
-    
-    // const close = (button, dropDown) => {
-    //     button.ariaExpanded = false;
-    //     button.classList.remove('active');
-    //     dropDown.classList.remove('active');
-    //     dropDown.style.height = '';
-    // };
-    
-    // const closeAllDrops = (button, dropDown) => {
-    //     characteristicsItemElems.forEach((elem) => {
-    //         if (elem.children[0] !== button && elem.children[1] !== dropDown) {
-    
-    //             close(elem.children[0], elem.children[1]);
-    //         }
-    //     })
-    // }
-
-    // const questionsList = document.querySelector('.questions__list');
-    // console.log(questionsList);
-    // const questionsItem = document.querySelector('.questions__item');
-    // console.log(questionsItem);
-
-    // questionsList.addEventListener('click', (event) => {
-    //     const target = event.target;
-    //     if (target.classList.contains('questions__title')) {
-    //         const parent = target.closest(questionsItem);
-    //         const description = parent.querySelector('.questions__text');
-    //         description.classList.contains('active') ?
-    //             close(target, description) :
-    //             open(target, description);
-    //     }
-    // });
-
     $('.questions__list').accordion({
         active: true,
         collapsible: true,
         heightStyle: 'content',
-        // icons: {
-        //     header: 'questions__title',
-        //     activeHeader: ' questions__title questions__item'
-        // }
+        icons: {
+            header: '.ui-accordion-header-icon',
+            activeHeader: ' .ui-accordion-header-icon'
+        }
     });
+
+    $('.odd').on('click', function() {
+        $(this)
+        .css({
+            backgroundImage: 'url("../img/active-minus-violet.svg")',
+            
+        })
+
+    })
+    
+    $('.even').on('click', function() {
+        $(this)
+        .css({
+            backgroundImage: 'url("../img/active-minus-white.svg")',
+            
+        })
+
+    })
+
 
     ymaps.ready(init);
     function init(){
@@ -127,14 +106,24 @@ const safari = () => {
 
         const mark = new ymaps.Placemark([51.308920, 37.872899])
 
-        myMap.geoObjects.add(mark)
+        myMap.geoObjects.add(mark);
+    
+    myMap.behaviors.disable('scrollZoom'); // запрещает зум карты колесиком мыши
+    myMap.behaviors.disable('drag'); // запрещает скролл свайпом
+        
+    myMap.controls.remove('rulerControl'); // удаляет контрол правила
+    myMap.controls.remove('zoomControl'); // удаляет контроль зумирования
+    myMap.controls.remove('fullscreenControl'); // удаляет переход в полноэкранный режим
+    myMap.controls.remove('typeSelector'); // удаляет тип
+    myMap.controls.remove('trafficControl'); // удаляет контроль трафика
+    myMap.controls.remove('searchControl'); // удаляет поиск
+    myMap.controls.remove('geolocationControl'); // удаляет геолокацию местоположение
     }
-
-// };
+};
 
 export {script}
 export {safari}
-// export {questions}
+export {questions}
 
 
 
