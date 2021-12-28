@@ -5,9 +5,9 @@
 .cart-container {
     background: linear-gradient(242.01deg, rgba(82, 0, 106, 0.7) 39.15%, rgba(205, 17, 59, 0.7) 76.16%);
     width: 1600px;
-    height: 1200px;
+    /* height: 1200px; */
     margin: 0 auto;
-    padding: 195px 592px 196px 593px;
+    padding: 195px 0 196px 0;
 }
 
 .cart-wrapper {
