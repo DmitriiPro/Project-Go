@@ -82,7 +82,7 @@ const questions = () => {
     let imgOddMinus = '../img/active-minus-violet.svg';
 
     $('.odd').on('click', function() {
-        [imgOddMinus, imgOddPlus] = [imgOddPlus, imgOddMinus]
+        [imgOddMinus, imgOddPlus] = [imgOddPlus, imgOddMinus];
         $(this)
         .css({
             backgroundImage: `url(${imgOddPlus})`,
@@ -95,7 +95,7 @@ const questions = () => {
     let imgEvenMinus = '../img/active-minus-white.svg';
 
     $('.even').on('click', function() {
-        [imgEvenMinus, imgEvenPlus] = [imgEvenPlus, imgEvenMinus]
+        [imgEvenMinus, imgEvenPlus] = [imgEvenPlus, imgEvenMinus];
         $(this)
         .css({
             backgroundImage: `url(${imgEvenPlus})`,
