@@ -17,13 +17,13 @@ const cart = () => {
     const cartBtnCheck = document.querySelector('.cart__btn-check');
 
     new JustValidate('.cart__form', {
-        // colorWrong: 'blue';
+        colorWrong: 'green',
 
-        rules : {
+        rules: {
             name: {
                 required: true,
                 minLength: 2,
-                maxLength: 30,
+                maxLength: 30
             },
 
             number: {
@@ -31,6 +31,7 @@ const cart = () => {
                 maxLength: 16,
                 function() {
                     const num = inputCartNumber.inputmask.unmaskedvalue();
+                    
                     return num.length === 16;
                 }
             },
@@ -79,7 +80,8 @@ const cart = () => {
                 async: true,
                 callback(response) {
                     console.log(response)
-                    form.reset();
+                    // form.reset();
+                    cartForm.disabled = true;
                     
                 },
                 error(response) {
@@ -87,8 +89,8 @@ const cart = () => {
                     console.log(`Произошла ошибка: ${response}`);
 
                 }
-            })
-        } 
+            });
+        }, 
     });
 
 };

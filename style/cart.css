@@ -168,7 +168,7 @@
     font-weight: 400;
     font-size: 19px;
     line-height: 23px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.10em;
     color: #52006A;
     border: transparent;
     padding: 19px 57px 18px 58px;
@@ -207,6 +207,15 @@
     border: transparent;
     padding: 20px 36px 19px 36px;
 }
+/* ///////////////////////////////// */
+
+.cart__name, .cart__number, .cr-in-left {
+    padding-left: 5px;
+}
+
+.cr-in-right {
+    padding-right: 5px;
+}
 
 .cart__inp-num {
     display: flex;
@@ -214,14 +223,14 @@
     margin-bottom: 50px;
 }
 
-.cart__label , .cr-i {
+.cart__label, .cr-i {
     display: block;
 }
 
-.cart__lb {
+.cart__label {
     text-align: center;
 }
-
+/* //////////////////////////// */
 /* кнопка checkout */
 
 .cart__form-btn {
@@ -240,6 +249,6 @@
     background: #FFA900;
     border-radius: 10px;
     border: transparent;
-   
+    
     
 }

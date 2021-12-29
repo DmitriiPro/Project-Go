@@ -78,19 +78,27 @@ const questions = () => {
         }
     });
 
+    let imgOddPlus = '../img/plus-violet.svg';
+    let imgOddMinus = '../img/active-minus-violet.svg';
+
     $('.odd').on('click', function() {
+        [imgOddMinus, imgOddPlus] = [imgOddPlus, imgOddMinus]
         $(this)
         .css({
-            backgroundImage: 'url("../img/active-minus-violet.svg")',
+            backgroundImage: `url(${imgOddPlus})`,
             
         })
 
     })
     
+    let imgEvenPlus = '../img/plus-white.svg';
+    let imgEvenMinus = '../img/active-minus-white.svg';
+
     $('.even').on('click', function() {
+        [imgEvenMinus, imgEvenPlus] = [imgEvenPlus, imgEvenMinus]
         $(this)
         .css({
-            backgroundImage: 'url("../img/active-minus-white.svg")',
+            backgroundImage: `url(${imgEvenPlus})`,
             
         })
 
