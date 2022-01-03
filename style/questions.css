@@ -110,7 +110,7 @@
 }
 
 .questions__title:hover:nth-child(even) {
-    background-image: url("../img/plus-white-hover.svg");
+    background-image: url("../img/plus-white-hover.svg") !important;
     background-repeat: no-repeat;
     background-position: right 70px top 50%;
 }

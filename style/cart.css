@@ -13,7 +13,7 @@
 .cart-wrapper {
     background: rgba(241, 241, 241, 0.83);
     width: 415px;
-    min-height: 809px;
+    /* height: 809px; */
     margin: 0 auto;
     padding: 27px 25px 45px 25px;
 }
@@ -107,7 +107,7 @@
 .cart__btn {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26px;
+    margin-bottom: 11px;
 }
 
 .crt-bt {
@@ -130,6 +130,16 @@
 
 /* инпуты */
 
+.cart__name {
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+.cart__number {
+    padding-top: 17px;
+    margin-bottom: 15px;
+}
+
 .cart__lb {
     font-family: Inter;
     font-style: normal;
@@ -137,6 +147,18 @@
     font-size: 14px;
     line-height: 18px;
     color: #CD113B;
+    position: relative;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    /* top: 0;
+    right: 0; */
+    /* padding-left: 10px; */
+    /* color: #33cccc ; */
+    /* transform: translateY(-90px); */
+    font-size: 14px;
+    width: 100%;
 }
 
 .cart__input-name {
@@ -154,7 +176,7 @@
     letter-spacing: 0.15em;
     color: #52006A;
     padding: 19px 94px 18px 94px;
-    margin-bottom: 27px;
+    /* margin-bottom: 27px; */
 }
 
 .cart__input-number {
@@ -172,7 +194,7 @@
     color: #52006A;
     border: transparent;
     padding: 19px 57px 18px 58px;
-    margin-bottom: 33px;
+    /* margin-bottom: 33px; */
 }
 
 .cart__inp-num-one {
@@ -211,6 +233,7 @@
 
 .cart__name, .cart__number, .cr-in-left {
     padding-left: 5px;
+    
 }
 
 .cr-in-right {
@@ -220,7 +243,8 @@
 .cart__inp-num {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding-top: 18px;
+    margin-bottom: 25px;
 }
 
 .cart__label, .cr-i {
@@ -229,6 +253,10 @@
 
 .cart__label {
     text-align: center;
+}
+
+.cart__form-btn {
+    padding-top: 25px;
 }
 /* //////////////////////////// */
 /* кнопка checkout */
