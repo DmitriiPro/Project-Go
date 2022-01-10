@@ -48,10 +48,10 @@
 }
 
 .wrapper__text {
-    margin-left: 211px;
+    padding-left: 211px;
     font-size: 28px;
     line-height: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 58px;
     
 }
 
@@ -59,13 +59,14 @@
     display: flex;
     flex-direction: column;
     flex-basis: 180px;
-    margin-bottom: 170px;
+    /* margin-bottom: 170px; */
 }
 
 .wrap-power {
     display: flex;
     gap: 31px;
     align-items:flex-end;
+    margin-bottom: 162px;
 }
 
 .wrap__text-color {
@@ -133,4 +134,319 @@
     background: url('../img/wrapper-click.svg');
     background-repeat: no-repeat; 
     transform: scale(1);
+}
+
+/* адаптивы  */
+
+@media (max-width: 1220px) {
+    .wrapper__title {
+        font-size: 190px;
+        line-height: 100%;
+        text-align: center;
+        
+    }
+
+    .wrapper__text {
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .wrapper::after,
+    .wrapper::before{
+        background-size: 100%;
+    } 
+
+   
+}
+
+@media (max-width: 1160px) {
+    .wrapper__title {
+        font-size: 170px;
+        line-height: 100%;
+        text-align: center;
+    }
+
+   
+
+    .wrapper__button {
+        font-size: 24px;
+        line-height: 26px;
+        padding: 20px 56px;
+    }
+
+    .wrap__text-color {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .wrapper__title {
+        font-size: 152px;
+    }
+
+    .wrapper { 
+        height: 100%; 
+        
+    } 
+
+    .present__btn-cont {
+        margin-bottom: 60px;
+    }
+
+    .wrapper__text {
+        margin-bottom: 50px;
+    }
+
+    .present__btn-cont {
+        padding-left: 39px;
+        /* margin-bottom: 40px; */
+    }
+
+    .wrapper__text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .wrapper::after {
+         /* background-image: url('../img/present-man-vr-1024.png'); */
+        width: 453px;
+        height: 520px; 
+       
+      
+      
+    }
+
+    .wrap__text-color {
+        font-size: 22px;
+    }
+
+    .wrap__four {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .wrap__new {
+        
+        font-size: 50px;
+        line-height: 62px;
+        
+    }
+    
+    .wrapper {
+       /* height: 583px; */
+    } 
+
+    .wrapper::before {
+        /* background-image: url('../img/present-gameover-1024.png');
+         */
+    }
+
+    .wrap-power {
+        margin-bottom: 100px;
+        padding-left: 40px;
+    }
+
+    .wrap {
+        /* margin-bottom: 100px; */
+        flex-basis: 140px;
+        text-align: center;
+    } 
+
+    .wrapper__img {
+        width: 67px;
+        height: 67px;
+    }
+
+    .wrapper__link {
+        
+        top: 469px;
+        right: 425px;
+        
+        
+    }
+}
+
+@media (max-width: 960px) {
+    .wrapper__title {
+        font-size: 140px;
+        /* line-height: 100%; */
+        
+    }
+
+    .wrapper__img {
+        display: none;
+    }
+
+    
+    .wrapper__button {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .wrapper__title {
+        font-size: 116px;
+    }
+
+    .wrapper__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 59px;
+    }
+
+    .wrap-power {
+        margin-bottom: 118px;
+    }
+    
+    .wrap {
+        flex-basis: 88px;
+    }
+
+    .wrapper__button {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 11px 35px;
+    }
+
+    .wrapper::after {
+        width: 409px;
+        height: 479px;
+    }
+
+    .wrap__four {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .wrap__new {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .wrap__text-color {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper__title {
+        font-size: 90px;
+    }
+
+    .wrapper__text {
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 140px;
+        margin-bottom: 40px;
+    }
+
+    .wrap-power {
+        margin-bottom: 60px;
+        padding-left: 0;
+    }
+
+    .wrapper__button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 9px 18px;
+    }
+
+    .wrapper::after {
+        width: 320px;
+        height: 380px;
+    }
+
+    .wrapper::before {
+        background-image: url('../img/present-gameover-768.png');
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper__title {
+        font-size: 70px;
+    }
+
+    .wrapper__text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 30px;
+    }
+
+    .wrap-power {
+        margin-bottom: 40px;
+    }
+
+    /* .wrapper__button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 9px 12px;
+    } */
+
+    .wrapper::after {
+        width: 280px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 540px) {
+    
+    /* .wrapper__title {
+        font-size: 46px;
+    } */
+
+    /* .wrapper__text {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 21px;
+    } */
+
+    .wrap-power {
+        margin-bottom: 29px;
+    }
+    
+    .wrap {
+        flex-basis: 50px;
+        /* height: 42px; */
+    }
+
+    /* .wrapper__button {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 7px 13px;
+    } */
+
+    .wrapper::after {
+        /* width: 161px;
+        height: 179px; */
+        width: 260px;
+        height: 300px;
+        top: 0;
+        right: 0;
+    }
+
+    .wrap__four {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .wrap__new {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .wrap__text-color {
+        /* font-size: 8px; */
+        height: 42px;
+    } 
 }
