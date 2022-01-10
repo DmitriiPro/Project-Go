@@ -29,13 +29,15 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    gap: 40px 20px;
+    gap: 0 20px;
 }
 
+
 .rest__item {
-    flex-basis: 380px;
+    width: 380px;
     height: 228px;
     display: flex;
+    /* background-repeat: no-repeat; */
 }
 
 .rest__item {
@@ -52,7 +54,7 @@
 }
 
 .rest__audio {
-   
+    margin-top: 40px;
     background-image: url('../img/rest__audio.jpg');
 }
 
@@ -64,10 +66,18 @@
     background-image: url('../img/rest__game.jpg');
 }
 .rest__monitor {
-    
+    margin-top: 40px;
     background-image: url('../img/rest__monitor.jpg');
 }
 
 .rest__ps {
     background-image: url('../img/rest__ps5.jpg');
+}
+
+/* адаптивы */
+@media (max-width: 1240px) {
+    .rest__list {
+      
+
+    }
 }
