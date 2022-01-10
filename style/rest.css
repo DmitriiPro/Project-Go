@@ -33,7 +33,7 @@
 }
 
 .rest__item {
-    width: 380px;
+    flex-basis: 380px;
     height: 228px;
     display: flex;
 }
@@ -52,6 +52,7 @@
 }
 
 .rest__audio {
+   
     background-image: url('../img/rest__audio.jpg');
 }
 
@@ -63,6 +64,7 @@
     background-image: url('../img/rest__game.jpg');
 }
 .rest__monitor {
+    
     background-image: url('../img/rest__monitor.jpg');
 }
 

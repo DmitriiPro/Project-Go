@@ -381,6 +381,7 @@
         font-size: 12px;
         line-height: 16px;
         margin-bottom: 30px;
+        padding-left: 90px;
     }
 
     .wrap-power {
@@ -420,33 +421,67 @@
         /* height: 42px; */
     }
 
-    /* .wrapper__button {
+    .wrapper__button {
         font-size: 10px;
         line-height: 12px;
         padding: 7px 13px;
-    } */
+    }
 
     .wrapper::after {
         /* width: 161px;
         height: 179px; */
         width: 260px;
-        height: 300px;
-        top: 0;
-        right: 0;
+        height: 280px;
+        
     }
 
     .wrap__four {
-        font-size: 20px;
+        font-size: 22px;
         line-height: 30px;
     }
 
     .wrap__new {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
 
     .wrap__text-color {
-        /* font-size: 8px; */
-        height: 42px;
+        font-size: 12px;
+        line-height: 18px;
+        /* height: 42px; */
     } 
+}
+
+@media (max-width: 440px) {
+     .wrapper__title {
+        font-size: 46px;
+    }
+
+    .wrapper__text {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 21px;
+        padding-left: 50px;
+    }
+
+    .wrap {
+        flex-basis: 50px;
+        height: 42px;
+    }
+
+    .wrapper::after {
+        width: 161px;
+        height: 179px;
+        
+    }
+
+    .present__btn-cont {
+        padding-left: 0;
+       
+    }
+
+    .wrapper::before {
+        /* width: 100%;
+        background-image: url('../img/present-gameover320.png'); */
+    }
 }
