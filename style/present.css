@@ -1,5 +1,5 @@
 .present-indent {
-    padding-top: 25px;  
+    padding: 5px 0 10px 0;  
 }
 
 .container {
@@ -183,6 +183,10 @@
 }
 
 @media (max-width: 1050px) {
+    .present-indent {
+        padding: 15px 0 25px 0;  
+    }
+
     .wrapper__title {
         font-size: 152px;
     }
@@ -289,6 +293,10 @@
 }
 
 @media (max-width: 870px) {
+
+    .present-indent {
+        padding: 13px 0 27px 0;  
+    }
 
     .container {
         padding: 0 15px;
@@ -453,6 +461,10 @@
 }
 
 @media (max-width: 440px) {
+    .present-indent {
+        padding: 10px 0 10px 0;  
+    }
+
      .wrapper__title {
         font-size: 46px;
     }

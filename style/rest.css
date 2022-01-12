@@ -1,3 +1,7 @@
+.rest {
+    padding-top: 10px;
+}
+
 .container-rest {
     /* height: 639px; */
 }
@@ -26,10 +30,10 @@
 }
 
 .rest__list {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    gap: 0 20px;
+    gap: 0 20px; */
 }
 
 
@@ -37,10 +41,13 @@
     width: 380px;
     height: 228px;
     display: flex;
-    /* background-repeat: no-repeat; */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
 }
 
 .rest__item {
+    /* background-size: contain; */
+    background-repeat: no-repeat;
     transition:  2s ease;
 }
 
@@ -73,11 +80,199 @@
 .rest__ps {
     background-image: url('../img/rest__ps5.jpg');
 }
+/* /////////////////////////////////// */
+
+/* .rest__two-wrap-item {
+    display: flex;
+    gap: 0 20px;
+    width: 100%;
+} */
+
+.rest__two-wrap-item,
+.rest__one-wrap-item {
+    display: flex;
+    gap: 0 20px;
+    width: 100%;
+}
+
 
 /* адаптивы */
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
+    .rest {
+        padding: 20px 0 35px 0;
+    }
+    
+
+    .rest__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 36px;
+    }
+
+    .rest__item {
+        width: 287px;
+        height: 172px;
+    
+    }
+
+    .rest__audio,
+    .rest__monitor {
+        margin-top: 30px;
+    }
+
+    .rest__text {
+        padding-left: 20px;
+    }
+
+    .rest__item {
+        background-size: cover; 
+       
+    }
+
+    .rest__two-wrap-item,
+    .rest__one-wrap-item {
+        /* width: 904px; */
+        justify-content: center;
+    }
+
     .rest__list {
-      
+        /* width: 904px; */
+        /* justify-content: space-between; */
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .rest {
+        padding: 27px 0 30px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    .rest__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .rest__list {
+        
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+    }
+
+    .rest__one-wrap-item,
+    .rest__two-wrap-item {
+        width: 100%;
+        gap: 20px 20px;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .rest__one-wrap-item {
 
     }
+
+    .rest__audio,
+    .rest__monitor {
+        margin-top: 0;
+    }
+
+    .rest__item {
+        width: 334px;
+        height: 200px;
+        flex-shrink: 1;
+    
+    }
 }
+
+@media (max-width: 700px) {
+    
+    .rest__item {
+        width: 270px;
+        height: 190px;
+        flex-shrink: 1;
+    
+    }
+
+    .rest__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .rest__one-wrap-item,
+    .rest__two-wrap-item {
+        
+        gap: 10px 10px;
+        justify-content: center;
+        
+    }
+
+    .rest__vr {
+        order: 0;
+    }
+
+    .rest__audio {
+        order: 0;
+    }
+
+    .rest__karaoke {
+        order: 0;
+    }
+
+    .rest__game {
+        order: 0;
+    }
+
+    .rest__monitor {
+        order: 0;
+    }
+
+    .rest__ps {
+        order: 0;
+    }
+
+}
+
+@media (max-width: 568px) {
+    .rest__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .rest__item {
+        width: 230px;
+        height: 160px;
+        
+    }
+
+    .rest__text {
+        /* padding: 0 10px; */
+        font-size: 10px;
+        line-height: 14px;
+        /* align-self: flex-end; */
+    }
+}
+
+@media (max-width: 490px) {
+    .rest {
+        padding: 10px 0 15px 0;
+    }
+
+    .rest__item {
+        width: 135px;
+        height: 75px;
+        
+    }
+    .rest__text {
+        padding: 30px 10px;
+        align-self: center;
+    }
+}
+
