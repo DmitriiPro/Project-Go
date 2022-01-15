@@ -1,5 +1,5 @@
-.container-hall {
-    /* height: 814px; */
+.hall {
+    padding: 50px 0 100px 0;
 }
 
 .hall__subtitle {
@@ -15,18 +15,21 @@
 .hall__list {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    /* align-content: space-between; */
     gap: 20px;
+    /* width: 100%; */
 }
 
 .hall__item {
     width: 580px;
     height: 349px;
     display: flex;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 
 .hall__text {
-    width: 252px;
+    max-width: 252px;
     height: 160px;
     font-weight: 700;
     font-size: 70px;
@@ -35,6 +38,14 @@
     color: var(--main-color,#FFFFFF);
     margin: auto;
 } 
+
+.hall__block-one,
+.hall__block-two {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
 
 .hall__item {
     transition:  2s ease;
@@ -59,4 +70,96 @@
 
 .hall__neon-style-img {
     background-image: url('../img/neon-style.jpg');
+}
+
+/* адаптивы */ 
+
+@media (max-width: 1024px) {
+    .hall {
+        padding: 35px 0;
+    }
+
+    .hall__subtitle {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 36px;
+    }
+
+    .hall__item {
+        width: 443px;
+        height: 265px;
+        
+    }
+
+    .hall__text {
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .hall__list {
+        justify-content: center;
+    }
+
+    .hall__i {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hall {
+        padding: 30px 0;
+    }
+
+    .hall__subtitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 35px;
+    }
+
+    .hall__item {
+        width: 333px;
+        height: 200px;
+    }
+
+    .hall__text {
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 121px;
+        height: 100px;
+    }
+} 
+
+@media (max-width: 568px) {
+    .hall {
+        padding: 15px 0;
+    }
+
+    .hall__i {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hall__list {
+        gap: 10px;
+    }
+    
+    .hall__subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .hall__item {
+        width: 280px;
+        height: 168px;
+    }
+
+    .hall__text {
+        font-size: 26px;
+        line-height: 34px;
+        max-width: 79px;
+        height: 68px;
+    }
 }

@@ -1,12 +1,17 @@
+.reservation {
+    padding: 80px 0;
+    background: var(--main-violet, #440F51);
+}
+
 .container-reservation {
     max-width: 1240px;
     padding: 0 30px;
     margin: 0 auto;
-    background: var(--main-violet, #440F51);
+    /* background: var(--main-violet, #440F51); */
 }
 
 .reservation__form {
-    padding: 80px 0;
+    /* padding: 80px 0; */
 }
 
 .reservation__hall {
@@ -32,7 +37,7 @@
 
 .reservation__hall-list {
     display: flex;
-    gap: 60px;
+    /* gap: 60px; */
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -63,10 +68,11 @@
 /* блок приставка */
 
 .reservation__holiday {
-    margin-bottom: 67px;
+    /* margin-bottom: 60px; */
     max-width: 1080px;
     display: block;
-    padding-left: 100px;
+    margin: 0 auto 60px;
+    /* padding-left: 100px; */
 }
 
 .wrapper-holiday {
@@ -108,6 +114,7 @@
 .reservation__input-radio {
     width: 27px;
     height: 27px;
+    margin-right: 12px;
 }
 
 .reservation__pristavka-label {
@@ -134,6 +141,7 @@
 .reservation__game-input {
     width: 25px;
     height: 25px;
+    margin-right: 12px;
 }
 
 .game-label {
@@ -160,6 +168,7 @@
 .reservation__input-dop {
     width: 25px;
     height: 25px;
+    margin-right: 12px;
 }
 
 .dop-label {
@@ -171,9 +180,10 @@
 /* блок время и дата */
 
 .reservation__date {
-    /* width: 980px; */
-    display: inline-block;
-    padding-left: 100px
+    max-width: 980px;
+    display: block;
+    margin: 0 auto;
+    /* padding-left: 100px */
     
 }
 
@@ -230,6 +240,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #211E1E;
+    padding-left: 20px;
 }
 
 .data {
@@ -244,6 +255,7 @@
 }
 
 .reservation__btn {
+    border: 0;
     border-radius: 10px;
     padding: 16px 50px; 
     font-weight: 700;
@@ -337,3 +349,335 @@ input[type="checkbox"]:focus {
     outline: 0;
 } 
 
+/* адаптивы */
+
+@media (max-width: 1080px) {
+    .reservation {
+        padding: 60px 0;
+    }
+
+    .reservation__title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .reservation__hall-title {
+        margin-bottom: 26px;
+        
+    }
+
+    .reservation__label {
+        width: 180px;
+        height: 44px;
+        padding: 10px 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .reservation__holiday-title {
+        margin-bottom: 26px;
+    }
+
+    .reservation__date-title {
+        margin-bottom: 26px;
+    }
+
+    .name {
+        width: 251px;
+        height: 52px;
+    }
+
+    .tel {
+        width: 254px;
+        height: 52px;
+    }
+
+    .wrap-date {
+        justify-content: space-between;
+        margin-bottom: 50px;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .reservation__btn  {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 13px 45px;
+    }
+
+}
+
+@media (max-width: 880px) {
+    .reservation {
+        padding: 50px 0;
+    }
+    
+    .container-reservation {
+        padding: 0 15px;
+    }
+
+    .reservation__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+
+    .reservation__hall-title {
+        margin-bottom: 30px;
+    }
+
+    .reservation__label {
+        width: 150px;
+        height: 38px;
+        padding: 9px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .reservation__hall {
+        margin-bottom: 50px;
+    } 
+
+    .reservation__holiday-title  {
+        margin-bottom: 30px;
+    }
+
+    .reservation__input-radio {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reservation__game-input,
+    .reservation__input-dop {
+        width: 40px;
+        height: 40px;
+        
+    }
+
+    .reservation__holiday {
+        margin: 0 auto 50px;
+    }
+
+    .reservation__date-title {
+        margin-bottom: 30px;
+    }
+
+    .name {
+        width: 280px;
+        height: 52px;
+    }
+
+    .tel {
+        width: 300px;
+        height: 52px;
+    }
+
+    .reservation__btn  {
+        font-size: 22px;
+        line-height: 28px;
+        padding: 16px 50px;
+        margin: 0 auto;
+    }
+
+    .wrap-date {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .one {
+        gap: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 42px;
+    }
+
+    .block-date {
+        gap: 12px;
+    }
+
+    .reservation__name-ind,
+    .reservation__date-ind {
+        margin-bottom: 14px;
+    }
+
+    .game-label,
+    .dop-label,
+    .reservation__item {
+        display: flex;
+        align-items: center;
+    }
+} 
+
+@media (max-width: 768px) {
+    .one {
+        justify-content: space-between;
+    }
+
+    .wrap-date {
+        
+        justify-content: space-between;
+    }
+
+    .reservation__btn  {
+        margin: 0;
+    }
+
+    .reservation__date {
+        padding: 0 25px;
+    }
+
+    .reservation__dop {
+        width: 100%;
+    }
+
+    .reservation__pristavka {
+        margin-bottom: 32px;
+    }
+
+    .reservation__holiday {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    .wrap-date {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 3px;
+        margin-bottom: 35px;
+    }
+
+    .block-date {
+        margin-bottom: 15px;
+    }
+
+    .one {
+        flex-direction: column;
+        margin-bottom: 35px;
+        align-items: center;
+    }
+
+    .men,
+    .tel {
+        width: 280px;
+        height: 52px;
+    }
+
+    .bl-name {
+        margin-bottom: 35px;
+    }
+
+    .reservation__btn  {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 17px 58px;
+        
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .reservation__date {
+        padding: 0;
+    }
+
+    .reservation__hall-one {
+        flex-basis: 50%;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    .reservation__hall-two {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width: 540px) {
+    .reservation {
+        padding: 30px 0;
+    }
+
+    .reservation__title {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 13px;
+    }
+
+    .reservation__hall-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .reservation__label {
+        width: 130px;
+        height: 30px;
+        padding: 6px 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .reservation__hall {
+        margin-bottom: 30px;
+    }
+
+    .reservation__holiday-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .reservation__pristavka-legend,
+    .reservation__game-legend,
+    .reservation__dop-legend {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .reservation__pristavka-label,
+    .game-label,
+    .dop-label {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .reservation__input-dop,
+    .reservation__game-input,
+    .reservation__input-radio {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .reservation__date-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    } 
+    
+}
+
+@media(max-width: 400px) {
+    .reservation__holiday {
+        padding: 0;
+    }
+
+    .reservation__pristavka {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .reservation__game {
+        margin-bottom: 25px;
+    }
+
+    .reservation__holiday {
+        margin-bottom: 30px;
+    }
+        
+}

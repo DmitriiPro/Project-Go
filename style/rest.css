@@ -31,6 +31,11 @@
 
 .rest__list {
     /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 20px; */
+
+    /* display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     gap: 0 20px; */
@@ -46,7 +51,7 @@
 }
 
 .rest__item {
-    /* background-size: contain; */
+    /* background-size: cover; */
     background-repeat: no-repeat;
     transition:  2s ease;
 }
@@ -82,21 +87,31 @@
 }
 /* /////////////////////////////////// */
 
-/* .rest__two-wrap-item {
-    display: flex;
-    gap: 0 20px;
-    width: 100%;
-} */
+.rest__block {
+    /* width: 100%; */
+}
 
-.rest__two-wrap-item,
-.rest__one-wrap-item {
+.rest__two-wrap-item {
     display: flex;
-    gap: 0 20px;
+    gap: 0 20px; 
     width: 100%;
+    
+}
+
+/* .rest__two-wrap-item, */
+.rest__one-wrap-item {
+    
+    display: flex;
+    gap: 0 20px; 
+     width: 100%;
+    
 }
 
 
 /* адаптивы */
+
+
+
 @media (max-width: 1024px) {
     .rest {
         padding: 20px 0 35px 0;
@@ -109,9 +124,11 @@
         margin-bottom: 36px;
     }
 
+
     .rest__item {
         width: 287px;
         height: 172px;
+        
     
     }
 
@@ -126,7 +143,7 @@
 
     .rest__item {
         background-size: cover; 
-       
+        
     }
 
     .rest__two-wrap-item,
@@ -159,19 +176,19 @@
 
     .rest__list {
         
-        display: flex;
-        /* flex-direction: column; */
+         display: flex; 
+        /* flex-direction: column;  */
         /* flex-wrap: wrap; */
     }
 
     .rest__one-wrap-item,
     .rest__two-wrap-item {
+
         width: 100%;
         gap: 20px 20px;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        
     }
 
     .rest__one-wrap-item {
@@ -213,7 +230,7 @@
         
     }
 
-    .rest__vr {
+    /* .rest__vr {
         order: 0;
     }
 
@@ -235,7 +252,7 @@
 
     .rest__ps {
         order: 0;
-    }
+    } */
 
 }
 
@@ -273,6 +290,19 @@
     .rest__text {
         padding: 30px 10px;
         align-self: center;
+    }
+
+    .rest__list {
+        gap: 10px;;
+        
+    }
+
+    .rest__one-wrap-item {
+        align-items: flex-end;
+    }
+
+    .rest__two-wrap-item {
+        align-items: flex-start;
     }
 }
 

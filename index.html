@@ -76,34 +76,52 @@
                 <h2 class="rest__title">У нас есть все для классного<br> 
                     отдыха с друзьями!</h2>
                 
-                <div class="rest__wrapper-list">
-                <ul class="rest__list">
-                    <div class="rest__one-wrap-item rest__block">
-                    <li class="rest__item rest__vr">
-                        <p class="rest__text text">VR очки</p>
-                    </li>
-                    <li class="rest__item rest__audio">
-                        <p class="rest__text">Аудио-система 5.1
-                            с отличным звуком</p>
-                    </li>
-                    <li class="rest__item rest__karaoke">
-                        <p class="rest__text text">Караоке (4 микрофона)</p>
-                    </li>
-                    </div>
+                <!-- <div class="rest__wrapper-list"> -->
+                <div class="rest__list">
 
-                    <div class="rest__two-wrap-item rest__block">
-                    <li class="rest__item rest__game">
-                        <p class="rest__text text">Настольные игры</p>
+                    <ul class="rest__one-wrap-item rest__block">
+                    <li class="rest__item rest__vr">
+                        <!-- <div class="rest__item rest__vr"> -->
+                            <p class="rest__text text">VR очки</p>
+                        <!-- </div> -->
                     </li>
+
+                    <li class="rest__item rest__audio">
+                        <!-- <div class="rest__item rest__audio"> -->
+                            <p class="rest__text">Аудио-система 5.1
+                                с отличным звуком</p>
+                        <!-- </div> -->
+                    </li>
+
+                    <li class="rest__item rest__karaoke">
+                        <!-- <div class="rest__item rest__karaoke"> -->
+                            <p class="rest__text text">Караоке (4 микрофона)</p>
+                        <!-- </div> -->
+                    </li>
+                    </ul>
+
+                    <ul class="rest__two-wrap-item rest__block">
+                    <li  class="rest__item rest__game">
+                        <!-- <div class="rest__item rest__game"> -->
+                            <p class="rest__text text">Настольные игры</p>
+                        <!-- </div> -->
+                    </li>
+
                     <li class="rest__item rest__monitor">
-                        <p class="rest__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+                        <!-- <div class="rest__item rest__monitor"> -->
+                            <p class="rest__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+                        <!-- </div> -->
                     </li>
+
                     <li class="rest__item rest__ps">
-                        <p class="rest__text text">РlаyStаtiоn 5</p>
+                        <!-- <div class="rest__item rest__ps"> -->
+                            <p class="rest__text text">РlаyStаtiоn 5</p>
+                        <!-- </div> -->
+                        
                     </li>
-                    </div>
-                </ul>
+                    </ul>
                 </div>
+                <!-- </div> -->
             </div>
         </section>
 
@@ -111,7 +129,10 @@
             <div class="container container-hall">
                 <h2 class="hall__subtitle">наши залы</h2>
 
-                <ul class="hall__list">
+                <div class="hall__list">
+
+                    <ul class="hall__block-one hall__i">
+
                     <li class="hall__item hall__vibes-img">
                         <p class="hall__text">80's vibes</p>
                     </li>
@@ -120,6 +141,10 @@
                         <p class="hall__text">Star wars</p>
                     </li>
 
+                    </ul>
+
+                    <ul class="hall__block-two hall__i">
+
                     <li class="hall__item hall__wild-west-img">
                         <p class="hall__text">wild west</p>
                     </li>
@@ -127,33 +152,36 @@
                     <li class="hall__item hall__neon-style-img">
                         <p class="hall__text">neon style</p>
                     </li>
-                </ul>
+
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="reservation" id="reserv">
-            <div class="container-reservation">
+            <div class="container container-reservation">
                 <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="reservation__form">
                     <h2 class="reservation__title">Забронировать зал просто</h2>
                         <fieldset class="reservation__hall">
                             <h3 class="reservation__hall-title">Выбери зал</h3>
                             <ul class="reservation__hall-list">
-                                <li class="reservation__hall-item">
+                                
+                                <li class="reservation__hall-item reservation__hall-one">
                                     <input type="radio" name="hall" value="vibes" class="reservation__radio" id="vibes">
                                     <label for="vibes" class="reservation__label"  tabindex="0">80’s vibes</label>
                                 </li>
 
-                                <li class="reservation__hall-item">
+                                <li class="reservation__hall-item reservation__hall-one">
                                     <input type="radio" name="hall" value="star-wars" class="reservation__radio" id="star">
                                     <label for="star" class="reservation__label" tabindex="0">Star wars</label>
                                 </li>
 
-                                <li class="reservation__hall-item">
+                                <li class="reservation__hall-item reservation__hall-two">
                                     <input type="radio" name="hall" value="wild west" class="reservation__radio" id="west">
                                     <label for="west" class="reservation__label" tabindex="0">wild west</label>
                                 </li>
 
-                                <li class="reservation__hall-item">
+                                <li class="reservation__hall-item reservation__hall-two">
                                     <input type="radio" name="hall" value="neon style" class="reservation__radio" id="neon">
                                     <label for="neon" class="reservation__label" tabindex="0">neon style</label>
                                 </li>
@@ -240,13 +268,16 @@
                                     <input id="time" type="time" name="time" required class="reservation__date-input data">
 
                                 </div>
+
+                                <div class="block__how">
                                     <!-- <label for="how" class="reservation__date-label">Сколько человек</label> -->
                                     <input id="how" type="number" name="number" required class="reservation__date-input men" placeholder="Сколько человек">
                                 </div>
+                                </div>
                                 
-                                <div class="block">
+                                <div class="block bl-name">
                                     <label for="name" class="reservation__date-label">Имя</label>
-                                    <input id="name" type="text" name="name" required class="reservation__date-input name">
+                                    <input id="name" type="text" name="name" required class="reservation__date-input reservation__name-ind name ">
 
                                     <label for="surname" class="reservation__date-label">Фамилия</label>
                                     <input id="surname" type="text" name="surname" required class="reservation__date-input name">
@@ -254,7 +285,7 @@
                                 
                                 <div class="block">
                                     <label for="phone" class="reservation__date-label">Телефон</label>
-                                    <input id="phone" type="tel" name="phone" required class="reservation__date-input tel">
+                                    <input id="phone" type="tel" name="phone" required class="reservation__date-input reservation__date-ind tel">
 
                                     <label for="mail" class="reservation__date-label">E-mail</label>
                                     <input id="mail" type="email" name="email" required class="reservation__date-input tel">
