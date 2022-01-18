@@ -264,6 +264,7 @@
     text-transform: uppercase;
     color: #6C0287;
     background: var(--main-color,#FFFFFF);
+    box-shadow: 0 0 7px 2px var(--main-color, #FFFFFF);
 }
 
 .button {

@@ -102,6 +102,7 @@
     border-radius: 10px;
     padding: 25px 69px;
     border: transparent;
+    box-shadow: 0 0 7px 2px #6C0287;
 }
 
 .wrapper__link {

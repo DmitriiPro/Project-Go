@@ -5,7 +5,7 @@
 }
 
 .container-about {
-    height: 719px;
+    /* height: 719px; */
 }
 
 .about__subtitle {
@@ -18,36 +18,50 @@
     margin-bottom: 40px;
 }
 
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 .about__left-photo {
-    padding-top: 30px;
-    width: 600px;
+    /* padding-top: 30px; */
+    max-width: 600px;
     height: 596px;
-    position: relative;
+    /* position: relative; */
+    margin-right: 40px;
 }
 
 .about__right-text {
-    height: 595px;
-    width: 500px;
-    position: relative;
+    /* height: 595px; */
+    max-width: 500px;
+    /* position: relative;
     right: -650px;
-    top: -595px;
+    top: -595px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 40px; */
     
 }
 
 .about__block-element {
-    width: 500px;
+    max-width: 500px;
+    /* height: 222px; */
+    margin-bottom: 48px;
 }
 
 .about__element {
     font-size: 20px;
     line-height: 28px;
     color: var(--main-color,#FFFFFF);
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
 }
 
 .about__blockquote {
     margin-left: 31px;
-    width: 465px;
+    max-width: 465px;
+    margin-bottom: 39px;
 }
 
 .about__blockquote-element {
@@ -55,7 +69,8 @@
     line-height: 50px;
     text-transform: uppercase;
     color: var(--main-color,#FFFFFF);
-    margin-bottom: 39px;
+    max-width: 427px;
+    /* margin-bottom: 39px; */
 }
 
 .about__blockquote-element::before {
@@ -77,13 +92,19 @@
     color: #6C0287;
 }
 
+.about__img-arkadi {
+    margin-right: 30px;
+}
+
 .about__cite {
-    margin-left: 111px;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 111px;
     background-image: url('../img/arkadii-abashin.jpg');
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    padding-left: 100px;
+    padding-left: 100px; */
 }
 
 .about__cite-element {
@@ -91,6 +112,220 @@
     font-size: 20px;
     line-height: 28px;
     color: var(--main-color,#FFFFFF);
-    width: 389px;
-    height: 84px;
+    max-width: 389px;
+    /* height: 84px; */
+}
+
+.about__block-none {
+    display: none;
+}
+/* адаптивы */
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 70px 0 35px 0;
+    }
+
+    .about__subtitle {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 26px;
+    }
+
+    .about__left-photo,
+    .about__left-img {
+        width: 420px;
+        height: 418px;
+    }
+
+    .about__element {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about__blockquote-element::before,
+    .about__blockquote-element::after,
+    .about__blockquote-element {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 390px;
+    }
+
+    .about__blockquote {
+        margin-bottom: 13px;
+    }
+
+    .about__img-arkadi {
+        width: 70px;
+        height: 70px;
+        margin-right: 35px;
+    }
+
+    .about__cite-element {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+}
+
+@media (max-width: 860px) {
+    .about {
+        padding: 60px 0 30px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .about__subtitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .about__left-photo {
+        /* width: 382px;
+        height: 380px; */
+        margin-right: 28px;
+    }
+
+    .about__left-photo,
+    .about__left-img {
+        width: 382px;
+        height: 380px;
+    }
+
+    .about__element {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about__block-element {
+        margin-bottom: 0;
+    }
+
+    .about__blockquote-element::before,
+    .about__blockquote-element::after,
+    .about__blockquote-element {
+        font-size: 32px;
+    }
+    
+    .about__img-arkadi {
+        margin-right: 25px;
+    }
+
+    .about__cite {
+        align-items: center;
+    }
+
+    .about__blockquote {
+        margin-bottom: 16px;
+        
+    }
+
+    .about__right-text {
+        width: 45%;
+        
+    }
+
+    .about__wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .about__blockquote,
+    .about__blockquote-element {
+        max-width: 830px;
+    }
+
+    .about__block-element {
+        margin: auto;
+    }
+
+    .about__block-visual {
+        display: none;
+    }
+
+    .about__block-none {
+        display: block;
+        padding-top: 30px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .about {
+        padding: 30px 0 15px 0;
+    }
+
+    .about__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about__subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .about__element {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__left-photo {
+        width: 280px;
+        height: 280px;
+        margin-right: 0;
+        order: 1;
+    }
+
+    .about__left-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about__blockquote-element::before,
+    .about__blockquote-element::after,
+    .about__blockquote-element {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about__blockquote {
+        margin-bottom: 9px;
+    }
+
+    .about__blockquote-element {
+        padding-top: 20px;
+    }
+
+    .about__img-arkadi {
+        width: 56px;
+        height: 56px;
+        margin-right: 11px;
+    }
+
+    .about__cite {
+        justify-content: flex-start;
+    }
+
+    .about__cite-element {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__right-text {
+        width: 100%;
+    }
+
+    .about__block-element {
+        max-width: 280px;
+    }
+
+    .about__block-none {
+        padding-top: 0;
+    }
 }

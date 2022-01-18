@@ -43,7 +43,7 @@ ul {
 }
 
 h1, h2, h3, p, figure,
-fieldset {
+fieldset, blockquote {
     margin: 0;
     padding: 0;
 }
@@ -52,9 +52,9 @@ fieldset {
     border: transparent; 
 }
 
-blockquote {
+/* blockquote {
     margin: 0;
-}
+} */
 
 iframe {
     border: none;
