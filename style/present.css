@@ -92,6 +92,10 @@
     color: var(--pink,#CD06FF);
 }
 
+.present__btn-cont {
+    padding-left: 7px;
+}
+
 .wrapper__button {
     font-weight: 700;
     font-size: 26px;
@@ -219,9 +223,6 @@
          /* background-image: url('../img/present-man-vr-1024.png'); */
         width: 453px;
         height: 520px; 
-       
-      
-      
     }
 
     .wrap__text-color {

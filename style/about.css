@@ -211,6 +211,10 @@
         font-size: 32px;
     }
     
+    .about__blockquote-element:after {
+        flex-wrap: nowrap;
+    }
+
     .about__img-arkadi {
         margin-right: 25px;
     }
@@ -328,4 +332,5 @@
     .about__block-none {
         padding-top: 0;
     }
+    
 }
