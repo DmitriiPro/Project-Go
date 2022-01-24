@@ -92,21 +92,22 @@ border-radius: 140px;
     position: relative;
 }
 
-.reviews__figure {
-    position: relative;
-}
-
-.reviews__img::before {
+.reviews__block-image::after {
     content: "";
     background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
-    z-index: -2;
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.reviews__img {
-    z-index: 1;
+.reviews__block-image {
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    
 }
 
 /* адаптивы */
@@ -139,6 +140,10 @@ border-radius: 140px;
         margin-right: 12px;
     }
 
+    .reviews__block-image::after {
+        display: none;
+    }
+    
     .reviews__element {
         font-size: 18px;
         line-height: 26px;

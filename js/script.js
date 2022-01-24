@@ -105,14 +105,14 @@ const questions = () => {
     })
 
 
-    ymaps.ready(init);
+    ymaps.ready(init); // яндекс карта
     function init(){
         const myMap = new ymaps.Map("map", {
-            center: [51.308920, 37.872899],
-            zoom: 13
+            center: [55.723151, 37.565021],
+            zoom: 17
         });
 
-        const mark = new ymaps.Placemark([51.308920, 37.872899])
+        const mark = new ymaps.Placemark([55.723151, 37.565021])
 
         myMap.geoObjects.add(mark);
     
@@ -127,6 +127,26 @@ const questions = () => {
     myMap.controls.remove('searchControl'); // удаляет поиск
     myMap.controls.remove('geolocationControl'); // удаляет геолокацию местоположение
     }
+
+
+
+
+    let $page = $('html, body'); // для плавного скролла по якорям
+    $('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+    });
+
+
+    var cleave = new Cleave('.reservation__date-input', {
+        numeral: true,
+        numeralThousandsGroupStyle: 'thousand'
+    });
+
+
+
 };
 
 export {script}

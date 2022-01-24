@@ -28,7 +28,6 @@
     gap: 40px;
     margin-right: 97px;
     align-items: center;
-    
 }
 
 .header__link {
@@ -97,7 +96,7 @@ button:hover {
 /* ссылки навигации  */
 
 .header__link {
-    transition: color 0.200s ease-in;
+    transition: all 0.200s ease-in;
 }
 
 .header__link:hover {
