@@ -30,13 +30,23 @@
 <body>
     <header class="header">
             <div class="container container-header">
-                <button class="header__button-menu">
-                <img src="img/header-menu-burger.svg" alt="кнопка бургер меню три полоски" class="header__menu-burger" width="54" height="29">
-                </button>
-                <img src="img/header-logo.svg" alt="logo" class="header__logo" width="120" height="66">
 
+                <div class="header__btn-wrapper header__button-block">
+                    <button class="header__button-menu">
+                        <img src="img/header-menu-burger.svg" alt="кнопка бургер меню три полоски" class="header__menu-burger" width="54" height="29">
+                    </button>
+
+                    <button class="header__menu-btn-close">
+                        <img src="img/btn-close-768.svg" alt="кнопка чтобы закрыть меню" class="header__menu-btn-close-img" width="42" height="42">
+                    </button>
+                </div>
+
+                <figure class="header__logo-figure">
+                    <img src="img/header-logo.svg" alt="logo" class="header__logo" width="120" height="66">
+                </figure>
                 <!-- <div class="header__wrapper-wrap"> -->
-                <nav class="header__nav">
+                <nav class="header__nav header__wrapper-navigat">
+                    <!-- <div class="header__wrapper-navigat"> -->
                     <!-- <img src="img/header-logo.svg" alt="logo" class="header__logo" width="120" height="66"> -->
                     <ul class="header__list">
                         <li class="header__item"><a href="#hall" class="header__link">залы</a></li>
@@ -44,10 +54,23 @@
                         <li class="header__item"><a href="#reserv" class="header__link">Бронь</a></li>
                         <li class="header__item"><a href="#otziv" class="header__link">отзывы</a></li>
                         <li class="header__item"><a href="#footer" class="header__link">Контакты</a></li>
+                        <!-- <li class="header__item-dubl">
+                            <button class="header__btn header__btn-dubl" type="submit" aria-label="Кнопка чтобы заказать обратный звонок">Заказать звонок</button>
+                        </li> -->
                     </ul>
                     <!-- <button class="header__btn" type="submit" aria-label="Кнопка чтобы заказать обратный звонок">Заказать звонок</button> -->
+
+                    <div class="header__btn-dubl">
+                        <button class="header__btn" type="submit" aria-label="Кнопка чтобы заказать обратный звонок">Заказать звонок</button>
+                    </div>
+
+                <!-- </div> -->
                 </nav>
-                <button class="header__btn" type="submit" aria-label="Кнопка чтобы заказать обратный звонок">Заказать звонок</button>
+
+                <div class="header__btn-container">
+                    <button class="header__btn header__btn-origin" type="submit" aria-label="Кнопка чтобы заказать обратный звонок">Заказать звонок</button>
+                </div>
+
                 </div>
             <!-- </div> -->
     </header>
@@ -56,8 +79,9 @@
             <div class="container">
 
                 <div class="wrapper">
-                    <h2 class="wrapper__title">GAME OVER</h2>
-                    <p class="wrapper__text">Новый формат игр и отдыха</p>
+                    <!-- <h2 class="wrapper__title">GAME OVER</h2> -->
+                    <img src="img/gameover-title-svg-white.svg" alt="надпись гейм овер" class="wrapper__title-text-svg" width="1180" height="200">
+                    <h3 class="wrapper__text">Новый формат игр и отдыха</h3>
 
                     <div class="wrap-power">
                     <div class="wrap">
@@ -73,9 +97,9 @@
                     </div>
                 </div>
                 <div class="present__btn-cont">
-                    <button  type="submit" class="wrapper__button" aria-label="кнопка чтобы забронировать зал">Забронировать</button>
+                    <a href="#reserv" class="wrapper__button" aria-label="кнопка чтобы забронировать зал">Забронировать</a>
                 </div>
-                        <a href="#footer" class="wrapper__link wrapper__hover">
+                        <a href="#rest-b" class="wrapper__link wrapper__hover">
                             <img src="img/present-knopa.svg" alt="круглая кнопка ссылка со стрелкой вниз" class="wrapper__img">
                         </a>
                     
@@ -83,7 +107,7 @@
             </div>
         </section>
 
-        <section class="rest">
+        <section class="rest" id="rest-b">
             <div class="container container-rest">
                 <h2 class="rest__title">У нас есть все для классного<br> 
                     отдыха с друзьями!</h2>
@@ -172,7 +196,7 @@
 
         <section class="reservation" id="reserv">
             <div class="container container-reservation">
-                <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="reservation__form">
+                <form action="" method="post" class="reservation__form">
                     <h2 class="reservation__title">Забронировать зал просто</h2>
                         <fieldset class="reservation__hall">
                             <h3 class="reservation__hall-title">Выбери зал</h3>
@@ -274,33 +298,33 @@
                                 <div class="block one">
                                 <div class="block-date">
                                     <!-- <label for="date" class="reservation__date-label">Дата</label> -->
-                                    <input id="date" type="date" name="date" required class="reservation__date-input data one-data">
+                                    <input id="date" type="date" name="date" required class="reservation__date-input reservation__date-input-form data one-data">
                                 
                                     <!-- <label for="time" class="reservation__date-label">Время</label> -->
-                                    <input id="time" type="time" name="time" required class="reservation__date-input data timepicker">
+                                    <input id="time" type="time" name="time" required class="reservation__date-input reservation__time-input-form data">
 
                                 </div>
 
                                 <div class="block__how">
                                     <!-- <label for="how" class="reservation__date-label">Сколько человек</label> -->
-                                    <input id="how" type="number" name="number" required class="reservation__date-input men" placeholder="Сколько человек">
+                                    <input id="how" type="number" name="number" required class="reservation__date-input reservation__number-input-form men" placeholder="Сколько человек">
                                 </div>
                                 </div>
                                 
                                 <div class="block bl-name">
                                     <label for="name" class="reservation__date-label">Имя</label>
-                                    <input id="name" type="text" name="name" required class="reservation__date-input reservation__name-ind name ">
+                                    <input id="name" type="text" name="name" required class="reservation__date-input reservation__name-ind reservation__name-form name ">
 
                                     <label for="surname" class="reservation__date-label">Фамилия</label>
-                                    <input id="surname" type="text" name="surname" required class="reservation__date-input name">
+                                    <input id="surname" type="text" name="surname" required class="reservation__date-input reservation__familia-input name">
                                 </div>
                                 
                                 <div class="block">
                                     <label for="phone" class="reservation__date-label">Телефон</label>
-                                    <input id="phone" type="tel" name="phone" required class="reservation__date-input reservation__date-ind tel">
+                                    <input id="phone" type="tel" name="phone" required class="reservation__date-input reservation__date-ind reservation__phone-form tel">
 
                                     <label for="mail" class="reservation__date-label">E-mail</label>
-                                    <input id="mail" type="email" name="email" required class="reservation__date-input tel">
+                                    <input id="mail" type="email" name="email" required class="reservation__date-input reservation__email-form tel">
                                 </div>
                             </div>
                             <div class="button">
@@ -559,5 +583,42 @@
             
         </div>
     </footer>
+
+    <!-- модальное окно -->
+    <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__wrapper modal__container">
+
+                <form action="#" class="modal__form">
+
+                    <button class="modal__close">
+                        <img src="img/modal-close-768-png.png" alt="белый крестик для закрывания окна" class="modal__close-img" width="42" height="42">
+                    </button>
+
+                    <h2 class="modal__title">Заказать звонок</h2>
+
+                        <fieldset class="modal__fieldset">
+                            
+                        <div class="modal__block-input-name modal__block">
+                            <label for="m-name" class="modal__label-name modal__lable">Имя</label>
+                            <input type="text" name="name" class="modal__name modal__input" required id="m-name">
+                        </div>
+                        
+                        <div class="modal__block-tel modal__block">
+                            <label for="m-phone" class="modal__label-tel modal__lable">Телефон</label>
+                            <input type="text" class="modal__tel modal__input" id="m-phone" required>
+                        </div>
+                        
+                    </fieldset>
+
+                    <div class="modal__container-button">
+                        <button class="modal__btn" type="submit">Позвонить мне</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>

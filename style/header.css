@@ -5,7 +5,7 @@
 .container-header {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .header__button-menu {
@@ -16,7 +16,13 @@
     display: flex;
     /* align-items: center; */
     flex-wrap: wrap;
+    align-self: center;
     
+}
+
+.header__logo-figure {
+    display: flex;
+    align-self: center;
 }
 
 .header__logo {
@@ -57,6 +63,31 @@
     border: transparent;
     background: transparent;
 } 
+
+.header__btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-btn-close {
+    display: none;
+    background: transparent;
+    border: transparent;
+}
+
+.header__btn-wrapper {
+    display: none;
+}
+
+/* .header__button-block {
+    display: flex;
+    flex-direction: row;
+} */
+
+.header__btn-dubl { 
+    display: none;
+}
+/* дублирование кнопки  */
 
 /* кнопки состояния */
 
@@ -101,6 +132,7 @@ button:hover {
 
 .header__link:hover {
     color: var(--pink,#CD06FF);
+    
 }
 
 .header__link:active {
@@ -209,10 +241,10 @@ button:hover {
     .header__nav {
         order: 1;
         width: 100%;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         justify-content: center;
 
-        /* display: none; */
+        display: none;
         
     }
 
@@ -234,6 +266,21 @@ button:hover {
         display: block;
         
     }
+
+    .header__btn-wrapper {
+        display: block;
+        /* width: 60px; */
+    }
+    /* .header__btn-origin {
+        display: none;
+    } */
+
+    /* .header__btn-dubl {
+        display: block;
+        
+    } */
+
+
 }
 
 
@@ -265,7 +312,7 @@ button:hover {
     }
 
     .header__btn {
-        order: 2;
+        /* order: 2; */
         /* display: none; */
     }
 
@@ -283,8 +330,31 @@ button:hover {
         font-size: 14px;
         line-height: 14px;
         padding: 11px 23px 12px 23px;
-        display: flex;
+        /* display: flex;
         margin: 0 auto;
-        margin-bottom: 27px;
+        margin-bottom: 27px; */
+    }
+
+    /* .header__btn {
+        display: none;
+    } */
+
+    .header__btn-container {
+        display: none;
+    } 
+
+    .header__btn-dubl {
+        display: block;
+        text-align: center;
+    }
+
+    .header__wrapper-navigat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__menu-btn-close-img {
+        width: 30px;
+        height: 30px;
     }
 }
