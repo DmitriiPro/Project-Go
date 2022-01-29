@@ -295,6 +295,12 @@ const modalka = () => {
         modal.hide(500);
     });
 
+    
+    modal.click(function(e) {
+        if ($(e.target).closest('.modal__form').length == 0) { // кликаем мимо окна за формой и окно закрывается
+            $(this).fadeOut();					
+        }
+    });
 
 };
 
