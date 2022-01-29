@@ -282,6 +282,22 @@ const formModal = () => {
 
 };
 
+const modalka = () => {
+    const headerBtn = $('.header__btn'); // нашел кнопку заказать звонок
+    const modal = $('.modal'); // нашел саму модалку что скрыта
+    const modalClose = $('.modal__close'); // нашел кноку закрытия в модалке белый крестик
+
+    headerBtn.on('click', function() {  // открывает окно
+        modal.show(500);
+    });
+
+    modalClose.on('click', function() {  // открывает окно
+        modal.hide(500);
+    });
+
+
+};
+
 
 export {script}
 export {safari}
@@ -289,6 +305,7 @@ export {questions}
 export{header}
 export{formReserv}
 export{formModal}
+export{modalka}
 
 
 
