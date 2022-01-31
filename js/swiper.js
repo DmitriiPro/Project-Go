@@ -42,7 +42,7 @@ const swiper = () => {
 				slidesPerView: 1,
 				spaceBetween: 5
 			}
-		  }
+		}
 	});
 
 };

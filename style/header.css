@@ -8,6 +8,18 @@
     align-items: center;
 }
 
+/* .container-header::before {
+    content: '';
+	background: rgba(27, 26, 27, 0.7);;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	z-index: 999;
+    display: none;
+} */
+
 .header__button-menu {
     display: none;
 }
@@ -129,7 +141,7 @@ button:hover {
 .header__link {
     transition: all 0.200s ease-in;
 }
-
+/* 
 .header__link:hover {
     color: var(--pink,#CD06FF);
     
@@ -137,7 +149,7 @@ button:hover {
 
 .header__link:active {
     color: var(--violet-dark, #640AA3);
-}
+} */
 
 /* адаптивы */
 
@@ -187,7 +199,7 @@ button:hover {
     .header {
         padding: 30px 0 14px 0 ;
     }
-   
+    
     .header__logo {
         width: 87px;
         height: 55px;
@@ -280,7 +292,27 @@ button:hover {
         
     } */
 
+    /* состояние текста в навигации */
+    .header__item {
+        transition: all 0.200s ease-in;
+    }
 
+    .header__item:hover {
+        background: #6C0287;
+        /* color: var(--main-color, #FFFFFF); */
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__item:active {
+        background: var(--pink, #CD06FF);
+    } 
+
+    /* ///////////////////////////////// */
+    .header__button-menu:hover,
+    .header__menu-btn-close:hover {
+        color: var(--pink, #CD06FF);
+    }
 }
 
 

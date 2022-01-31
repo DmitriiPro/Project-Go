@@ -150,12 +150,14 @@ const header = () => {
         burgerMenuBtn.hide();
         menuBtnClose.show();
         
+        
     });
 
     menuBtnClose.on('click', function() {  // открывает окно и закрывает
         navHeader.hide(300);
         burgerMenuBtn.show();
         menuBtnClose.hide();
+        
     });
 
 };
@@ -238,6 +240,7 @@ const formReserv = () => {
 
 };
 
+// само модальное окно
 const formModal = () => {
 
     const modalTitle = $('.modal__title'); // нашел заголвок
@@ -267,7 +270,7 @@ const formModal = () => {
 
         $.ajax({
 
-            url: 'https://jsonplaceholder.typicode.com/todos',
+            url: 'https://postman-echo.com/post',
             type: 'POST',
             data: $(this).serialize(),
             success(data) {
@@ -282,6 +285,8 @@ const formModal = () => {
 
 };
 
+
+// клик на кнопку заказать звонок
 const modalka = () => {
     const headerBtn = $('.header__btn'); // нашел кнопку заказать звонок
     const modal = $('.modal'); // нашел саму модалку что скрыта
@@ -291,7 +296,7 @@ const modalka = () => {
         modal.show(500);
     });
 
-    modalClose.on('click', function() {  // открывает окно
+    modalClose.on('click', function() {  // закрывает окно
         modal.hide(500);
     });
 
@@ -312,6 +317,4 @@ export{header}
 export{formReserv}
 export{formModal}
 export{modalka}
-
-
 
