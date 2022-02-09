@@ -149,24 +149,26 @@ const header = () => {
         navHeader.show(300);
         burgerMenuBtn.hide();
         menuBtnClose.show();
-        
-        
     });
 
     menuBtnClose.on('click', function() {  // открывает окно и закрывает
         navHeader.hide(300);
         burgerMenuBtn.show();
         menuBtnClose.hide();
-        
     });
-
+    
 };
 
 const formReserv = () => {
     const reservationForm = $('.reservation__form'); // нашел саму форму
     const reservationDateTitle = $('.reservation__date-title'); // нашел сам заголовок выбери дату и время
 
+    // маска инпута в форме
+    const reservMask = $('.reservation__mask-tel'); // нашел инпут номера телефона
 
+    const telMaskReserv = new Inputmask('+7 (999)-999-99-99');
+    telMaskReserv.mask(reservMask);
+    //
 
     $('.reservation__date-input-form').focus( () => { // при фокусе на поле меняем текст - выбор даты
         reservationDateTitle
@@ -245,43 +247,125 @@ const formModal = () => {
 
     const modalTitle = $('.modal__title'); // нашел заголвок
     const modalForm = $('.modal__form'); // нашел саму форму 
+    const modalTelephon = $('.modal__tel');// нашел инпут телефон
+    const modalName = $('.modal__name');//нашел инпут имя
+    
 
-    $('.modal__name').focus( () => { // при фокусе на поле меняем текст - Введите ваше имя
+    modalName.focus( () => { // при фокусе на поле меняем текст - Введите ваше имя
         modalTitle
         .text(`Введите ваше имя`)
     })
 
-    $('.modal__tel').focus( () => { // при фокусе на поле меняем текст - Введите ваш номер
+    modalTelephon.focus( () => { // при фокусе на поле меняем текст - Введите ваш номер
         modalTitle
         .text(`Введите ваш номер`)
     })
 
-    $('.modal__name').blur( () => { // отводим от инпута после фокуса и меняется текст чтобы заполнил форму
+    modalName.blur( () => { // отводим от инпута после фокуса и меняется текст чтобы заполнил форму
         modalTitle.text('Заполните форму');
     })
 
-    $('.modal__tel').blur( () => { // отводим от инпута после фокуса и меняется текст чтобы заполнил форму
+    modalTelephon.blur( () => { // отводим от инпута после фокуса и меняется текст чтобы заполнил форму
         modalTitle.text('Заполните форму');
     })
 
+    // маска для инпута
+    const inputMaskTel = document.querySelector('.modal__mask-input'); // нашел сам инпут телефон другой класс
+    const telMask = new Inputmask('+7 (999)-999-99-99'); // на инпут сделал маску для номера 
+    telMask.mask(inputMaskTel);
+    // конец маски инпута
 
-    modalForm.submit(function(event) {
-        event.preventDefault();
+    // форма валидации для модального окна
 
+    const validation = new JustValidate('.modal__form');
+    validation
+    .addField('#m-name', [
+        {
+            rule: 'required',
+            errorMessage: 'Ваше имя?',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Не менее 3 символов',
+        },
+        {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинное имя',
+        },
+    ])
+    .addField('#m-phone', [
+        {
+            rule: 'required',
+            errorMessage: 'Введите ваш номер?',
+        },
+        {
+            validator: (value) => {
+                const phone =  inputMaskTel.inputmask.unmaskedvalue()
+                // console.log(phone)
+                return Number(phone) && phone.length === 10;
+            },
+        
+        errorMessage: 'Неправильный номер!',
+        },
+    ])
+    .onSuccess((event) => {
+        const name = modalName.value;
+        const number = inputMaskTel.inputmask.unmaskedvalue();
+
+        const request = {
+            name: name,
+            number: number
+        }
+
+        console.log('Валидация успешна. Отправка данных...', event.target);
+
+        //  modalForm.disabled = true;
         $.ajax({
 
-            url: 'https://postman-echo.com/post',
-            type: 'POST',
-            data: $(this).serialize(),
-            success(data) {
-                modalTitle.text('Ваша заявка принята ' + data.id)
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            method: 'POST',
+            data: request,
+            async: true,
+            success: function(response) {
+                modalTitle.text('Ваша заявка принята ' + response.id);
+                // $('.modal__fieldset').slideUp(300);
+                
+                console.log('Запрос выполнен успешно!')
+                
+                
             },
             error() {
-                modalTitle.text('Что-то пошло не так попробуйте позже!')
+                modalTitle.text('Что-то пошло не так попробуйте позже!');
+                console.log(`Произошла ошибка!`);
+                
             }
-        })
+        });
 
     });
+
+
+    //https://jsonplaceholder.typicode.com/posts
+    // modalForm.submit(function(event) {
+    //     event.preventDefault();
+
+    //     $.ajax({
+
+    //         url: 'https://postman-echo.com/post',
+    //         type: 'POST',
+    //         data: $(this).serialize(),
+    //         success(data) {
+    //             modalTitle.text('Ваша заявка принята ' + data.id)
+    //             modalForm.reset();
+    //         },
+    //         error() {
+    //             modalTitle.text('Что-то пошло не так попробуйте позже!')
+    //         }
+    //     })
+
+    // });
+    
 
 };
 

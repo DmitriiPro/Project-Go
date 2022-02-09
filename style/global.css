@@ -81,9 +81,9 @@ section {
     padding: 0 30px;
 }
 
-button {
-    transition: background 2s ease-in, color 2s ease-in;
-}
+/* button {
+    transition: all 0.200s ease-in;
+} */
 
 /* button:hover {
     background: var(--violet, #840AA3);

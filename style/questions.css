@@ -79,7 +79,7 @@
     background: var(--main-violet, #440F51);
     
 }
-/* задал через псевдо цвета на ааккардеон 
+/* задал через псевдоэлемент цвета на четные и нечетные - аккардеон 
 цвета задал на сам li*/
 /* ///////////////////////////////////////////////// */
 .questions__item:nth-child(odd) .questions__title {
@@ -154,7 +154,6 @@
 
     .questions__item:nth-child(-n + 4) {
         background: #FFFFFF;
-
     }
 
     .questions__item-none {

@@ -227,12 +227,13 @@
 .tel, .men {
     width: 300px;
     height: 52px;
+    padding-left: 10px;
 }
 
 .name {
     width: 280px;
     height: 52px;
-
+    padding-left: 10px;
 }
 
 .men {
@@ -240,7 +241,7 @@
     font-size: 18px;
     line-height: 28px;
     color: #211E1E;
-    padding-left: 20px;
+    
 }
 
 .data {

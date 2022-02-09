@@ -103,14 +103,14 @@
 
 /* кнопки состояния */
 
-button, .header__btn {
+/* button, .header__btn {
     transition: background 0.200s ease-in, color 0.200s ease-in;
 }
 
 button:hover {
     background: var( --violet, #840AA3);
     color: var(--main-color,#FFFFFF);
-}
+} */
 
 .header__btn:focus {
     background: #6C0287;
@@ -141,15 +141,48 @@ button:hover {
 .header__link {
     transition: all 0.200s ease-in;
 }
-/* 
+
 .header__link:hover {
-    color: var(--pink,#CD06FF);
+    color: #6C0287;
     
 }
 
 .header__link:active {
-    color: var(--violet-dark, #640AA3);
-} */
+    color: var( --pink, #CD06FF);
+} 
+
+/* состояния на кнопки бургер и закрыть */
+.header__button-menu,
+.header__menu-btn-close  {
+    color: #6C0287;
+    border: none;
+	background-color: transparent;
+    transition: all 0.200s ease-in;
+}
+
+
+.header__button-menu:hover,
+.header__menu-btn-close:hover {
+    color: var(--pink, #CD06FF);
+    background-color: transparent;
+
+}
+
+.header__button-menu:focus,
+.header__menu-btn-close:focus  {
+    border: 1px solid var(--pink, #CD06FF);
+}
+
+.header__button-menu:active,
+.header__menu-btn-close:active {
+    color:  var(--violet, #840AA3);
+}
+
+.header__menu-burger,
+.header__menu-btn-close-img {
+    fill: currentColor;
+}
+
 
 /* адаптивы */
 
@@ -299,7 +332,7 @@ button:hover {
 
     .header__item:hover {
         background: #6C0287;
-        /* color: var(--main-color, #FFFFFF); */
+        color: var(--main-color, #FFFFFF);
         width: 100%;
         text-align: center;
     }
@@ -309,10 +342,7 @@ button:hover {
     } 
 
     /* ///////////////////////////////// */
-    .header__button-menu:hover,
-    .header__menu-btn-close:hover {
-        color: var(--pink, #CD06FF);
-    }
+   
 }
 
 

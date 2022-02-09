@@ -178,6 +178,10 @@
     padding-left: 60px;
 }
 
+/* скрываю надписи на яндекс карте */
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
 /* кнопка svg инстаграм  */
 
 .svg-inst-link {
@@ -289,11 +293,11 @@
 }
 
 .contact__link:hover {
-    color: var(--pink,#CD06FF);
+    color: #6C0287;
 }
 
 .contact__link:active {
-    color: var(--violet-dark, #640AA3);
+    color: var( --pink, #CD06FF);
 }
 
 .footer-link {
@@ -301,11 +305,11 @@
 }
 
 .footer-link:hover {
-    color: var(--pink,#CD06FF);
+    color: #6C0287;
 }
 
 .footer-link:active {
-    color: var(--violet-dark, #640AA3);
+    color: var( --pink, #CD06FF);
 }
 
 /* адаптивы  */
