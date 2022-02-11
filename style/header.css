@@ -143,6 +143,7 @@ button:hover {
 }
 
 .header__link:hover {
+    /* color: #6C0287; */
     color: #6C0287;
     
 }
@@ -187,7 +188,9 @@ button:hover {
 /* адаптивы */
 
 @media (max-width: 1240px) {
-    
+    .zzz {
+        display: block;
+    }
 
     .header__list {
         gap: 30px;
@@ -314,7 +317,7 @@ button:hover {
 
     .header__btn-wrapper {
         display: block;
-        /* width: 60px; */
+        width: 55px;
     }
     /* .header__btn-origin {
         display: none;
@@ -326,19 +329,21 @@ button:hover {
     } */
 
     /* состояние текста в навигации */
-    .header__item {
+    .header__link {
         transition: all 0.200s ease-in;
+        
     }
 
-    .header__item:hover {
-        background: #6C0287;
+    .header__link:hover  {
+        background-color: #6C0287;
         color: var(--main-color, #FFFFFF);
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
 
-    .header__item:active {
-        background: var(--pink, #CD06FF);
+    .header__link:active {
+        background-color: var(--pink, #CD06FF);
+        width: 100%;
     } 
 
     /* ///////////////////////////////// */

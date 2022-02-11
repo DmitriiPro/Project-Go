@@ -146,13 +146,13 @@ const header = () => {
     const headerBtn = $('.header__btn'); // кнопка заказать звонок
 
     burgerMenuBtn.on('click', function() {  // открывает окно и закрывает
-        navHeader.show(300);
+        navHeader.show();
         burgerMenuBtn.hide();
         menuBtnClose.show();
     });
 
     menuBtnClose.on('click', function() {  // открывает окно и закрывает
-        navHeader.hide(300);
+        navHeader.hide();
         burgerMenuBtn.show();
         menuBtnClose.hide();
     });
