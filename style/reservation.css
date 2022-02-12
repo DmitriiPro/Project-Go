@@ -351,6 +351,14 @@ input[type="checkbox"]:focus {
     outline: 0;
 } 
 
+.reservation__btn {
+    transition: all 0.200s ease;
+}
+
+.reservation__btn:active {
+    transform: scale(0.9);
+}
+
 /* адаптивы */
 
 @media (max-width: 1080px) {

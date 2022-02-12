@@ -17,11 +17,14 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=12aebab4-08b6-49aa-9a3f-d9ba8638abdc&lang=ru_RU"></script>
     <script src="js/jquery-3.6.0.min.js" defer></script>
     <script src="js/inputmask.min.js" defer></script>
-    <script src="js/just-validate.production.min.js" defer></script>
+    <!-- <script src="js/just-validate.production.min.js" defer></script> -->
     <script src="js/jquery-ui.min.js" defer></script>
     <script src="js/inert.js" defer></script>
     <script src="js/index.js" type="module"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
 
 
 
@@ -599,7 +602,13 @@
             <div class="modal__wrapper modal__container">
 
                 <button class="modal__close">
-                    <img src="img/modal-close-768-png.png" alt="белый крестик для закрывания окна" class="modal__close-img" width="42" height="42">
+                    <!-- <img src="img/modal-close-768-png.png" alt="белый крестик для закрывания окна" class="modal__close-img" width="42" height="42"> -->
+
+                    <svg class="modal__close-img" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)"/>
+                        <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)"/>
+                    </svg>
+
                 </button>
 
                 <form action="#" class="modal__form">

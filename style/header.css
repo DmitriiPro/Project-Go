@@ -1,5 +1,5 @@
 .header {
-    padding: 30px 0 6px 0 ;
+    padding: 30px 0 25px 0 ;
 }
 
 .container-header {
@@ -69,6 +69,7 @@
     border: 3px solid #6C0287;
     border-radius: 10px;
     padding: 10px 30px;
+    transition: all 0.200s ease;
 }
 
 .header__button-menu {
@@ -122,6 +123,7 @@ button:hover {
     background: var(--violet-dark, #640AA3);
     border-radius: 10px;
     color: var(--main-color,#FFFFFF);
+    transform: scale(0.9);
 }
 
 .wrapper__button:focus {
@@ -188,9 +190,9 @@ button:hover {
 /* адаптивы */
 
 @media (max-width: 1240px) {
-    .zzz {
+    /* .zzz {
         display: block;
-    }
+    } */
 
     .header__list {
         gap: 30px;
@@ -233,7 +235,7 @@ button:hover {
 
 @media (max-width: 1160px) {
     .header {
-        padding: 30px 0 14px 0 ;
+        padding: 30px 0 15px 0 ;
     }
     
     .header__logo {
@@ -275,10 +277,17 @@ button:hover {
 
 } 
 
+@media (min-width: 799px) {
+    .zzz {
+        display: block !important;
+    }
+}
+
+
 
 @media (max-width: 800px ) {
     .header {
-        padding: 32px 0 13px 0 ;
+        padding: 33px 0 15px 0 ;
     }
 
     .container-header {

@@ -119,6 +119,7 @@
 .about__block-none {
     display: none;
 }
+
 /* адаптивы */
 
 @media (max-width: 1024px) {

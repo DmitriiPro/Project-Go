@@ -1,5 +1,5 @@
 .present-indent {
-    padding: 5px 0 10px 0;  
+    padding: 25px 0 50px 0;  
 }
 
 .container {
@@ -149,7 +149,7 @@
 
 @media(max-width: 1080px) {
     .present {
-        padding: 15px 0 25px 0;
+        padding: 15px 0 42px 0;
     }
 
     .wrapper__title-text-svg {
@@ -222,7 +222,7 @@
 
 @media(max-width: 868px) {
     .present {
-        padding: 13px 0 25px 0;
+        padding: 15px 0 40px 0;
     }
 
     .wrapper__title-text-svg {
@@ -347,7 +347,7 @@
 
 @media(max-width: 490px) {
     .present {
-        padding: 10px 0;
+        padding: 10px 0 23px 0;
     }
 
     .wrapper__title-text-svg {

@@ -43,7 +43,15 @@
 	right: 15px;
 	border: transparent;
 	background-color: transparent;
+	color: var(--main-color);
+	transition: all 0.200s ease-in;
 }
+
+.modal__close-img {
+	fill: currentColor;
+}
+
+
 
 .modal__fieldset {
 	display: flex;
@@ -110,12 +118,31 @@
 	font-size: 16px;
 }
 
-/* состояния */
+/* состояние кнопки закрыть */
 .modal__close:hover {
-	/* color: var(--pink, #CD06FF); */
+	color: var(--pink);
+	background: transparent;
+	transform: scale(0.9);
+}
+
+.modal__close:focus{
+	border: 1px solid var(--pink);
 	
 }
 
+.modal__close:active {
+	color: var(--violet);
+	
+}
+
+/* кнопка отправить модалки */
+.modal__btn {
+	transition: all 0.200s ease;
+}
+
+.modal__btn:active {
+	transform: scale(0.9);
+} 
 
 /* адаптивы */ 
 
