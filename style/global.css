@@ -81,15 +81,16 @@ section {
     padding: 0 30px;
 }
 
-/* button {
-    transition: all 0.200s ease-in;
-} */
-
-/* button:hover {
-    background: var(--violet, #840AA3);
-    color: var(--main-color,#FFFFFF);
-} */
-
-
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /*inset: 0; или можно использовать инсет только неработает в старых браузерах*/
+    background-color: rgba(27, 26, 27, 0.7);
+    z-index: 400;
+}
 
 

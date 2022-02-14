@@ -15,9 +15,7 @@
 .hall__list {
     display: flex;
     flex-wrap: wrap;
-    /* align-content: space-between; */
     gap: 20px;
-    /* width: 100%; */
 }
 
 .hall__item {
@@ -25,7 +23,6 @@
     height: 349px;
     display: flex;
     background-size: cover;
-    /* background-repeat: no-repeat; */
 }
 
 .hall__text {
@@ -88,7 +85,6 @@
     .hall__item {
         width: 443px;
         height: 265px;
-        
     }
 
     .hall__text {

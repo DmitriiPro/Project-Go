@@ -1,11 +1,3 @@
-/* .rest {
-    padding-top: 10px;
-} */
-
-.container-rest {
-    /* height: 639px; */
-}
-
 .rest__title {
     font-weight: 700;
     font-size: 40px;
@@ -29,36 +21,19 @@
     padding-bottom: 20px;
 }
 
-.rest__list {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0 20px; */
-
-    /* display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    gap: 0 20px; */
-}
-
-
 .rest__item {
     width: 380px;
     height: 228px;
     display: flex;
-    /* background-size: contain;
-    background-repeat: no-repeat; */
 }
 
 .rest__item {
-    /* background-size: cover; */
     background-repeat: no-repeat;
     transition:  2s ease;
 }
 
 .rest__item:hover  {
     transform: scale(1.1);
-    
 }
 
 .rest__vr {
@@ -85,11 +60,6 @@
 .rest__ps {
     background-image: url('../img/rest__ps5.jpg');
 }
-/* /////////////////////////////////// */
-
-.rest__block {
-    /* width: 100%; */
-}
 
 .rest__two-wrap-item {
     display: flex;
@@ -98,38 +68,28 @@
     
 }
 
-/* .rest__two-wrap-item, */
 .rest__one-wrap-item {
-    
     display: flex;
     gap: 0 20px; 
-     width: 100%;
-    
+    width: 100%;
 }
 
-
 /* адаптивы */
-
-
 
 @media (max-width: 1024px) {
     .rest {
         padding: 42px 0 35px 0;
     }
     
-
     .rest__title {
         font-size: 30px;
         line-height: 40px;
         margin-bottom: 36px;
     }
 
-
     .rest__item {
         width: 287px;
         height: 172px;
-        
-    
     }
 
     .rest__audio,
@@ -143,18 +103,11 @@
 
     .rest__item {
         background-size: cover; 
-        
     }
 
     .rest__two-wrap-item,
     .rest__one-wrap-item {
-        /* width: 904px; */
         justify-content: center;
-    }
-
-    .rest__list {
-        /* width: 904px; */
-        /* justify-content: space-between; */
     }
 
 }
@@ -175,24 +128,16 @@
     }
 
     .rest__list {
-        
         display: flex; 
-        /* flex-direction: column;  */
-        /* flex-wrap: wrap; */
     }
 
     .rest__one-wrap-item,
     .rest__two-wrap-item {
-
         width: 100%;
         gap: 20px 20px;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-    }
-
-    .rest__one-wrap-item {
-
     }
 
     .rest__audio,
@@ -204,7 +149,6 @@
         width: 334px;
         height: 200px;
         flex-shrink: 1;
-    
     }
 }
 
@@ -214,7 +158,6 @@
         width: 270px;
         height: 190px;
         flex-shrink: 1;
-    
     }
 
     .rest__text {
@@ -224,35 +167,9 @@
 
     .rest__one-wrap-item,
     .rest__two-wrap-item {
-        
         gap: 10px 10px;
         justify-content: center;
-        
     }
-
-    /* .rest__vr {
-        order: 0;
-    }
-
-    .rest__audio {
-        order: 0;
-    }
-
-    .rest__karaoke {
-        order: 0;
-    }
-
-    .rest__game {
-        order: 0;
-    }
-
-    .rest__monitor {
-        order: 0;
-    }
-
-    .rest__ps {
-        order: 0;
-    } */
 
 }
 
@@ -266,14 +183,11 @@
     .rest__item {
         width: 230px;
         height: 160px;
-        
     }
 
     .rest__text {
-        /* padding: 0 10px; */
         font-size: 10px;
         line-height: 14px;
-        /* align-self: flex-end; */
     }
 }
 
@@ -285,7 +199,6 @@
     .rest__item {
         width: 135px;
         height: 75px;
-        
     }
     .rest__text {
         padding: 30px 10px;
@@ -294,7 +207,6 @@
 
     .rest__list {
         gap: 10px;;
-        
     }
 
     .rest__one-wrap-item {

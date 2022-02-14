@@ -1,17 +1,8 @@
 const swiper = () => {
 
 	const swiper = new Swiper('.swiper', {
-		// Optional parameters
-		// direction: 'vertical',
 		slidePerView: 1,
 		loop: true,
-
-		// If we need pagination
-		// pagination: {
-		// el: '.swiper-pagination',
-		// },
-
-		// Navigation arrows
 		navigation: {
 		nextEl: '.button-right',
 		prevEl: '.button-left',
@@ -19,11 +10,6 @@ const swiper = () => {
 
 		mousewheel: true,
 		keyboard: true,
-
-	
-		// scrollbar: {
-		// el: '.swiper-scrollbar',
-		// },
 
 
 		breakpoints: {

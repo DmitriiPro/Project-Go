@@ -7,11 +7,6 @@
     max-width: 1240px;
     padding: 0 30px;
     margin: 0 auto;
-    /* background: var(--main-violet, #440F51); */
-}
-
-.reservation__form {
-    /* padding: 80px 0; */
 }
 
 .reservation__hall {
@@ -37,7 +32,6 @@
 
 .reservation__hall-list {
     display: flex;
-    /* gap: 60px; */
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -68,11 +62,9 @@
 /* блок приставка */
 
 .reservation__holiday {
-    /* margin-bottom: 60px; */
     max-width: 1080px;
     display: block;
     margin: 0 auto 60px;
-    /* padding-left: 100px; */
 }
 
 .wrapper-holiday {
@@ -89,12 +81,6 @@
     text-align: center;
     margin-bottom: 40px;
 }
-
-/* .reservation__pristavka {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
 
 .reservation__holiday-list {
     display: flex;
@@ -183,8 +169,6 @@
     max-width: 980px;
     display: block;
     margin: 0 auto;
-    /* padding-left: 100px */
-    
 }
 
 .reservation__date-title {
@@ -194,7 +178,6 @@
     text-align: center;
     margin-bottom: 38px;
 }
-
 
 .wrap-date {
     display: flex;
@@ -374,7 +357,6 @@ input[type="checkbox"]:focus {
 
     .reservation__hall-title {
         margin-bottom: 26px;
-        
     }
 
     .reservation__label {
@@ -462,7 +444,6 @@ input[type="checkbox"]:focus {
     .reservation__input-dop {
         width: 40px;
         height: 40px;
-        
     }
 
     .reservation__holiday {
@@ -526,7 +507,6 @@ input[type="checkbox"]:focus {
     }
 
     .wrap-date {
-        
         justify-content: space-between;
     }
 
@@ -583,7 +563,6 @@ input[type="checkbox"]:focus {
         font-size: 18px;
         line-height: 26px;
         padding: 17px 58px;
-        
     }
 
     .button {
@@ -689,5 +668,5 @@ input[type="checkbox"]:focus {
     .reservation__holiday {
         margin-bottom: 30px;
     }
-        
+    
 }

@@ -23,18 +23,14 @@
 
 .modal__container {
 	width: 600px;
-	/* height: 498px; */
-	/* margin: 0 auto; */
 }
 
 .modal__wrapper {
 	background-color: var(--main-violet, #440F51);
-	
 }
 
 .modal__form {
 	padding: 60px 0 80px 0;
-	
 }
 
 .modal__close {
@@ -51,15 +47,12 @@
 	fill: currentColor;
 }
 
-
-
 .modal__fieldset {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 40px;
 	padding-top: 40px;
-	/* margin-bottom: 40px; */
 }
 
 .modal__title {
@@ -67,7 +60,6 @@
 	font-size: 22px;
 	line-height: 30px;
 	text-align: center;
-	/* margin-bottom: 40px; */
 }
 
 .modal__lable {
@@ -75,13 +67,11 @@
 	font-size: 14px;
 	line-height: 16px;
 	margin-bottom: 6px;
-	/* position: relative; */
 }
 
 .modal__input {
 	width: 280px;
 	height: 52px;
-	/* position: relative; */
 }
 
 .modal__block {
@@ -127,12 +117,10 @@
 
 .modal__close:focus{
 	border: 1px solid var(--pink);
-	
 }
 
 .modal__close:active {
 	color: var(--violet);
-	
 }
 
 /* кнопка отправить модалки */

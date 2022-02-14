@@ -38,7 +38,6 @@
     height: 762px;
     bottom: 0;
     right: 0;
-    /* z-index: -1; */
 }
 
 .wrapper__title {
@@ -63,7 +62,6 @@
     display: flex;
     flex-direction: column;
     max-width: 193px;
-    /* margin-bottom: 170px; */
 }
 
 .wrap-power {
@@ -133,10 +131,7 @@
 }
 
 .wrapper__hover:focus {
-    /* background: url('../img/wrapper-focus-pink.svg');
-    background-repeat: no-repeat;  */
     outline: 1px solid var(--pink,#CD06FF);
-    
 }
 
 .wrapper__hover:active {
@@ -167,7 +162,6 @@
 
     .wrapper::before {
         top: 144px;
-        /* height: 431px; */
         background-image: url('../img/gamevoer-text-1024.svg');
     }
 
@@ -281,7 +275,6 @@
 
     .wrapper::before {
         top: 114px;
-        /* height: 425px; */
         background-image: url('../img/gameover-text-768.svg'); 
     }
 
@@ -310,7 +303,6 @@
     }
 
     .wrapper__button {
-        /* border-radius: 4px; */
         padding: 12px 20px 12px 20px;
         font-size: 12px;
         line-height: 14px;

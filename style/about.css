@@ -4,10 +4,6 @@
     padding: 0 30px;
 }
 
-.container-about {
-    /* height: 719px; */
-}
-
 .about__subtitle {
     font-weight: 700;
     font-size: 40px;
@@ -25,29 +21,20 @@
 }
 
 .about__left-photo {
-    /* padding-top: 30px; */
     max-width: 600px;
     height: 596px;
-    /* position: relative; */
     margin-right: 40px;
 }
 
 .about__right-text {
-    /* height: 595px; */
     max-width: 500px;
-    /* position: relative;
-    right: -650px;
-    top: -595px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* margin-left: 40px; */
-    
 }
 
 .about__block-element {
     max-width: 500px;
-    /* height: 222px; */
     margin-bottom: 48px;
 }
 
@@ -55,7 +42,6 @@
     font-size: 20px;
     line-height: 28px;
     color: var(--main-color,#FFFFFF);
-    /* margin-bottom: 48px; */
 }
 
 .about__blockquote {
@@ -70,7 +56,6 @@
     text-transform: uppercase;
     color: var(--main-color,#FFFFFF);
     max-width: 427px;
-    /* margin-bottom: 39px; */
 }
 
 .about__blockquote-element::before {
@@ -99,12 +84,6 @@
 .about__cite {
     display: flex;
     justify-content: flex-end;
-    /* margin-left: 111px;
-    background-image: url('../img/arkadii-abashin.jpg');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    padding-left: 100px; */
 }
 
 .about__cite-element {
@@ -113,7 +92,6 @@
     line-height: 28px;
     color: var(--main-color,#FFFFFF);
     max-width: 389px;
-    /* height: 84px; */
 }
 
 .about__block-none {
@@ -167,7 +145,6 @@
         line-height: 26px;
     }
 
-
 }
 
 @media (max-width: 860px) {
@@ -186,8 +163,6 @@
     }
 
     .about__left-photo {
-        /* width: 382px;
-        height: 380px; */
         margin-right: 28px;
     }
 

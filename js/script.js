@@ -2,7 +2,6 @@ const script = () => {
     
     let prevActiveElement;
 
-
     function addInnert(elem) {
         prevActiveElement = document.activeElement;
         for (let i = 0; i < document.body.children.length; i++) {
@@ -73,44 +72,17 @@ const questions = () => {
         collapsible: true,
         heightStyle: 'content',
         icons: {
-            header: '.ui-accordion-header-icon',
-            activeHeader: ' .ui-accordion-header-icon'
+            header: 'acc-icon',
+            activeHeader: 'acc-icon acc-icon_active'
         }
     });
-
-    let imgOddPlus = '../img/plus-violet.svg';
-    let imgOddMinus = '../img/active-minus-violet.svg';
-
-    $('.odd').on('click', function() {
-        [imgOddMinus, imgOddPlus] = [imgOddPlus, imgOddMinus];
-        $(this)
-        .css({
-            backgroundImage: `url(${imgOddPlus})`,
-            
-        })
-
-    })
-    
-    let imgEvenPlus = '../img/plus-white.svg';
-    let imgEvenMinus = '../img/active-minus-white.svg';
-
-    $('.even').on('click', function() {
-        [imgEvenMinus, imgEvenPlus] = [imgEvenPlus, imgEvenMinus];
-        $(this)
-        .css({
-            backgroundImage: `url(${imgEvenPlus})`,
-            
-        })
-
-    })
-
 
     ymaps.ready(init); // яндекс карта
     function init(){
         const myMap = new ymaps.Map("map", {
             center: [55.723151, 37.565021],
             zoom: 17
-        });
+    });
 
         const mark = new ymaps.Placemark([55.723151, 37.565021])
 
@@ -146,15 +118,32 @@ const header = () => {
     const headerBtn = $('.header__btn'); // кнопка заказать звонок
 
     burgerMenuBtn.on('click', function() {  // открывает окно и закрывает
-        navHeader.show();
+        $('.overlay').show();
+        navHeader.show().css({
+            'z-index': 600
+        });
         burgerMenuBtn.hide();
         menuBtnClose.show();
     });
+
+
+    const closeBurgermenu = () => { /* функция при клике по оверлею закрывается бургер меню*/ 
+        navHeader.hide().css({ // закрывается меню бургер
+            'z-index': 600
+        });
+        $('.overlay').hide(); // закрывается оверлей
+        menuBtnClose.hide(); // кнопка закрыть скрывается
+        burgerMenuBtn.show(); // кнопка открытия бургер открывается
+    };
+
+    $('.overlay').click(closeBurgermenu); // при клике по оверлею закрывает бургер меню
+    $('.header__link').click(closeBurgermenu); // при клике по ссылке закрывается бургер меню
 
     menuBtnClose.on('click', function() {  // открывает окно и закрывает
         navHeader.hide();
         burgerMenuBtn.show();
         menuBtnClose.hide();
+        $('.overlay').hide();
     });
     
 };
@@ -246,7 +235,7 @@ const formReserv = () => {
 const formModal = () => {
 
     const modalTitle = $('.modal__title'); // нашел заголвок
-    const modalForm = $('.modal__form'); // нашел саму форму 
+    const modalForm = document.querySelector('.modal__form'); // нашел саму форму 
     const modalTelephon = $('.modal__tel');// нашел инпут телефон
     const modalName = $('.modal__name');//нашел инпут имя
     
@@ -303,7 +292,6 @@ const formModal = () => {
         {
             validator: (value) => {
                 const phone =  inputMaskTel.inputmask.unmaskedvalue()
-                // console.log(phone)
                 return Number(phone) && phone.length === 10;
             },
         
@@ -311,20 +299,19 @@ const formModal = () => {
         },
     ])
     .onSuccess((event) => {
-        const name = modalName.value;
+        const name = modalName.val();
         const number = inputMaskTel.inputmask.unmaskedvalue();
 
         const request = {
-            name: name,
-            number: number
+            name,
+            number
         }
 
         console.log('Валидация успешна. Отправка данных...', event.target);
 
-        //  modalForm.disabled = true;
         $.ajax({
 
-            url: 'https://jsonplaceholder.typicode.com/posts',
+            url: 'https://postman-echo.com/post',
             method: 'POST',
             data: request,
             async: true,
@@ -333,8 +320,7 @@ const formModal = () => {
                 // $('.modal__fieldset').slideUp(300);
                 
                 console.log('Запрос выполнен успешно!')
-                
-                
+                modalForm.reset();
             },
             error() {
                 modalTitle.text('Что-то пошло не так попробуйте позже!');
@@ -345,27 +331,6 @@ const formModal = () => {
 
     });
 
-
-    //https://jsonplaceholder.typicode.com/posts
-    // modalForm.submit(function(event) {
-    //     event.preventDefault();
-
-    //     $.ajax({
-
-    //         url: 'https://postman-echo.com/post',
-    //         type: 'POST',
-    //         data: $(this).serialize(),
-    //         success(data) {
-    //             modalTitle.text('Ваша заявка принята ' + data.id)
-    //             modalForm.reset();
-    //         },
-    //         error() {
-    //             modalTitle.text('Что-то пошло не так попробуйте позже!')
-    //         }
-    //     })
-
-    // });
-    
 
 };
 
