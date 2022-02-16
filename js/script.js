@@ -52,7 +52,6 @@ const script = () => {
         return removeInnert
     }
 
-
 };
 
 
